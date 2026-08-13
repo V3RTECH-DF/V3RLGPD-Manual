@@ -7,7 +7,7 @@ task: atender-solicitacao
 role: encarregado
 routes: ["#/dsar", "#/settings"]
 screenshots: [v3rlgpd-04-dsar, v3rlgpd-04c-dsar-detalhe-auto]
-last_verified: 2026-06-28
+last_verified: 2026-08-13
 status: publicado
 ---
 
@@ -24,6 +24,8 @@ Quando um titular abre um pedido e confirma o e-mail, ele aparece em **Atendimen
 2. Veja a **data-limite (SLA)** de cada pedido. Priorize os que estão perto do prazo (referência: **15 dias**).
 3. Clique em **Ver / Executar** no pedido desejado.
 4. Consulte os **insumos** no detalhe: a **execução assistida** (dados ligados ao e-mail) e o **painel do Inventário (ROPA)** (onde mais aquele dado pode estar, inclusive fora do site).
+   - O **Localizar** procura o e-mail nos **consentimentos**, nos **comentários** e nas **respostas de formulário** do site (Forminator, Fluent Forms, WPForms, Gravity Forms, CF7/Flamingo e Elementor Forms).
+   - **Contas de usuário do WordPress** e **dados do WooCommerce ainda não entram** nessa busca — confira esses sistemas à mão antes de dar a resposta como completa.
 5. Responda:
    - **Resposta automática** (quando disponível) — veja abaixo.
    - **Resposta manual** — escreva o **Motivo / Resposta ao Titular**, anexe documentos se quiser, e atualize o **status**. O titular é avisado por e-mail quando você conclui ou recusa.
@@ -51,6 +53,8 @@ Para pedidos de **acesso/confirmação**, **portabilidade** e **informação sob
 > Ao eliminar dados, o plugin pede uma **justificativa** e registra tudo numa **assinatura auditável**. Antes de confirmar:
 > - Verifique se **não há base legal** que obrigue a reter aquele dado (ex.: obrigação legal, prestação de contas).
 > - Lembre-se: depois de eliminado, **não há como recuperar**.
+
+A eliminação apaga as **respostas de formulário** daquela pessoa **e os arquivos que ela tiver anexado** (currículo, comprovante, foto). Ao final, o relatório mostra **quanto foi eliminado em cada origem** — copie esse resumo para a resposta ao titular: é a sua demonstração concreta de que o pedido foi cumprido.
 
 ## Recusar um pedido
 

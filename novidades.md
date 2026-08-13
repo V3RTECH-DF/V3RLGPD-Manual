@@ -8,6 +8,42 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versões 1.60 a 1.62 — Formulários do Elementor entram na roda
+
+Quem monta as páginas com o **Elementor Pro** e usa o formulário dele ficava sem cobertura nenhuma: sem prazo de guarda, sem descarte automático, sem atendimento ao titular sobre aquelas respostas. Agora esses formulários são tratados como todos os outros:
+
+- Aparecem na lista do **[Verificador de Formulários](/modulos/formularios/)** e são **verificados** (consentimento, dados pessoais, dados sensíveis, presença no Inventário).
+- Podem **gerar um rascunho de ROPA** a partir dos campos, ou ser **vinculados** a uma atividade existente.
+- Entram na **[retenção/expurgo](/modulos/retencao/)** — o descarte apaga a resposta e os arquivos enviados — e são alcançados pelo **[atendimento ao titular](/modulos/atendimentos/)**.
+
+> A versão **gratuita** do Elementor não tem o widget de formulário. Isso vale para quem usa o **Elementor Pro**; em sites sem ele, nada aparece e nada quebra.
+
+*Nos bastidores:* o Elementor identifica cada formulário por um código com letras, e o Verificador só aceitava números — o que faria ele analisar o formulário errado, em silêncio. Isso foi corrigido junto. **Nada muda** para quem usa Forminator, Fluent Forms, WPForms, Gravity ou Contact Form 7.
+
+## Versão 1.59 — O atendimento ao titular agora enxerga os formulários
+
+Quando alguém perguntava *"quais dados vocês têm sobre mim?"*, o V3RLGPD procurava o e-mail apenas nos **consentimentos** e nos **comentários**. As **respostas de formulário** — muitas vezes onde estão os dados mais completos da pessoa — ficavam de fora. Ou seja: o plugin respondia por omissão, e o currículo que a pessoa enviou seguia intacto depois de uma "eliminação".
+
+- O **Localizar** agora encontra também as **respostas de formulário** daquela pessoa (Forminator, Fluent Forms, WPForms, Gravity Forms, CF7/Flamingo e, a partir da 1.60, Elementor Forms).
+- O **Eliminar** apaga essas respostas **junto com os arquivos que a pessoa enviou**.
+- Ao final, o relatório da ação detalha **quanto foi eliminado em cada origem** — dá para copiar esse resumo direto para a resposta ao titular.
+
+> ⚠️ **Uma ressalva honesta:** **contas de usuário do WordPress** e **dados do WooCommerce** ainda **não entram** nessa busca. Está em avaliação, e não é esquecimento: apagar um pedido de loja esbarra em **prazo legal de guarda fiscal**, e uma exclusão automática poderia destruir um registro que a organização é obrigada a manter. Se o seu site tem loja ou área de usuários, confira esses sistemas à mão antes de dar o pedido por concluído.
+
+Veja em **[Atendimentos (DSAR)](/modulos/atendimentos/)** e no guia **[Atender uma solicitação](/guias/atender-solicitacao/)**.
+
+## Versão 1.58 (correções) — O descarte agora apaga também os arquivos enviados
+
+Faltava uma peça no ciclo de vida do dado: quando um formulário era descartado pela regra de retenção, o plugin apagava a resposta — mas **deixava o arquivo anexado no servidor**. O currículo em PDF, o comprovante, a foto: continuavam lá, mesmo com o painel indicando "descartado".
+
+- Agora o **arquivo é apagado junto** com a entrada. Vale para **Forminator**, **Fluent Forms**, **WPForms** e **Gravity Forms** — e, desde a 1.60, também para o **Elementor Forms**.
+- O mesmo passou a valer para os **anexos de resposta dos atendimentos** — os documentos que o Encarregado anexa ao responder um pedido de titular, que costumam conter justamente os dados pessoais daquela pessoa.
+- A remoção é feita **só dentro da pasta de arquivos do próprio site**, por segurança: nada fora dali é tocado.
+
+> 💡 **Vale conferir:** arquivos que ficaram para trás em descartes **anteriores a esta correção** continuam no servidor. Se o seu site já rodava a retenção em formulários com anexo, peça à equipe de implantação uma limpeza dessa pasta.
+
+Veja em **[Retenção & Expurgo](/modulos/retencao/)**.
+
 ## Versão 1.58 — Transferência internacional agora registra a base legal
 
 Quando uma atividade envia dados para fora do Brasil (um serviço de e-mail, uma nuvem no exterior), a LGPD exige mais do que dizer "vai para os Estados Unidos": exige registrar **por que** essa transferência é permitida — o **mecanismo de proteção do art. 33**.

@@ -168,7 +168,7 @@ Use o botão **💬 Enviar feedback** no topo do painel. Dá para mandar **suges
 
 ## Como sei se os formulários do meu site estão em conformidade?
 
-Use o **Verificador de Formulários** (aba do grupo **Inventário (ROPA)**). Ele analisa os campos de cada formulário (Contact Form 7, Forminator, WPForms, Gravity, Fluent) e aponta possíveis problemas: campos que parecem **dados pessoais** (e **sensíveis**), falta de **consentimento**, formulário **fora do Inventário (ROPA)** e indícios de **dados de menores** sem responsável. A análise é **consultiva** (baseada em pistas do nome/tipo do campo) e **não corrige** nem substitui orientação jurídica — ela aponta para você tratar. Detalhes em [Verificador de Formulários](/modulos/formularios/).
+Use o **Verificador de Formulários** (aba do grupo **Inventário (ROPA)**). Ele analisa os campos de cada formulário (Contact Form 7, Forminator, WPForms, Gravity, Fluent e Elementor Pro) e aponta possíveis problemas: campos que parecem **dados pessoais** (e **sensíveis**), falta de **consentimento**, formulário **fora do Inventário (ROPA)** e indícios de **dados de menores** sem responsável. A análise é **consultiva** (baseada em pistas do nome/tipo do campo) e **não corrige** nem substitui orientação jurídica — ela aponta para você tratar. Detalhes em [Verificador de Formulários](/modulos/formularios/).
 
 ## Uso Google Forms. O V3RLGPD cobre eles também?
 

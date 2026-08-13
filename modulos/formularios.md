@@ -6,7 +6,7 @@ permalink: /modulos/formularios/
 role: encarregado
 routes: ["#/forms"]
 screenshots: [v3rlgpd-33-mapeamento-formularios, v3rlgpd-34-verificador-relatorio, v3rlgpd-38-ropa-rascunho-formulario, v3rlgpd-39-google-forms]
-last_verified: 2026-06-28
+last_verified: 2026-08-13
 status: publicado
 ---
 
@@ -83,6 +83,25 @@ Quando o relatório aponta **Fora do Inventário (ROPA)** e **ainda não existe*
 > O rascunho é um **ponto de partida**, não uma decisão pronta. A **base legal** sugerida (consentimento) precisa da sua confirmação, e nada substitui a sua análise — especialmente quando há dados sensíveis ou de crianças/adolescentes.
 
 > 💡 **Já existe a atividade?** Então não crie outra: use o **seletor da linha** para **vincular** o formulário à atividade existente (próxima seção). Crie uma nova só quando ainda não houver.
+
+## Formulários do Elementor
+
+Quem monta as páginas com o **Elementor Pro** costuma usar o **widget de formulário** dele — e esses formulários agora recebem o mesmo tratamento dos demais:
+
+- Aparecem na **lista** do verificador, junto com os formulários dos outros plugins.
+- São **verificados** normalmente: campos com dados pessoais, selo de **sensível**, falta de checkbox de **consentimento** e ausência no **Inventário (ROPA)**.
+- Podem gerar um **rascunho de ROPA** a partir dos campos, ou ser **vinculados** a uma atividade existente.
+- Entram na **[retenção/expurgo](/modulos/retencao/)** e são alcançados pelo **atendimento ao titular** (Localizar e Eliminar), com os arquivos anexados incluídos.
+
+> ⚠️ **Só o Elementor Pro tem formulário**
+>
+> A versão gratuita do Elementor **não inclui** o widget de formulário. Se o seu site usa o Elementor Free, não há formulários dele para verificar aqui — os seus formulários vêm de outro plugin.
+
+> 💡 **No Elementor, o formulário é o widget**
+>
+> Diferente dos outros plugins, o Elementor não tem uma "lista de formulários" separada: cada formulário **é um bloco dentro de uma página**. Na lista, ele aparece com o **nome que você deu ao formulário** no Elementor; se o formulário estiver sem nome, aparece como *"título da página — Elementor"*.
+>
+> Como o formulário não é uma página própria, **não há botão de edição direta** para ele nesta tela (ao contrário dos outros plugins): para alterar os campos, abra a página no editor do Elementor e edite o bloco do formulário ali.
 
 ## Formulários do Google (Google Forms)
 

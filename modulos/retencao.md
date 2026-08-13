@@ -6,7 +6,7 @@ permalink: /modulos/retencao/
 role: encarregado
 routes: ["#/retention", "#/forms", "#/settings"]
 screenshots: [v3rlgpd-30-retencao-fila, v3rlgpd-31-retencao-config, v3rlgpd-32-ropa-retencao, v3rlgpd-33-mapeamento-formularios]
-last_verified: 2026-06-23
+last_verified: 2026-08-13
 status: publicado
 ---
 
@@ -35,6 +35,18 @@ A ação padrão é **anonimização**, não exclusão pura.
 > 💡 **Por que anonimizar em vez de só apagar**
 >
 > Apagar tudo deixaria você **sem prova** de que cumpriu a LGPD. Anonimizar elimina o risco para o titular (não há mais como identificá-lo) **e** mantém o registro de que a obrigação foi cumprida no prazo. É o melhor dos dois mundos.
+
+## Os arquivos enviados também são apagados
+
+Quando um formulário aceita **anexos** — um currículo em PDF, uma foto, um comprovante —, o arquivo enviado fica guardado no servidor do site, separado da resposta. Ele é dado pessoal como qualquer outro.
+
+Ao descartar uma entrada de formulário pela regra de retenção, o V3RLGPD **apaga também os arquivos que vieram junto com ela**. Vale para **Forminator**, **Fluent Forms**, **WPForms**, **Gravity Forms** e **Elementor Forms**.
+
+O mesmo passou a valer para os **anexos de resposta dos atendimentos**: os documentos que o Encarregado anexa ao responder um pedido de titular também costumam conter dados pessoais e, quando o atendimento é descartado pela retenção, **são apagados junto**.
+
+> ⚠️ **Se você usava versões anteriores**
+>
+> Antes desta correção, o descarte apagava a resposta mas **deixava o arquivo anexado no servidor** — ou seja, o currículo continuava lá depois de o cadastro ter sido eliminado. Isso foi corrigido daqui para frente, mas **arquivos que ficaram para trás em descartes anteriores continuam no servidor**: se o seu site já rodou a retenção em formulários com anexo, vale pedir à equipe de implantação uma limpeza da pasta de arquivos desses formulários. Veja [Novidades](/novidades/).
 
 ## Onde se configura
 
@@ -76,7 +88,7 @@ Um **conector** é a "ponte" que sabe encontrar e anonimizar um tipo de dado. O 
 | Usuários do WordPress | contas por papel (ex.: assinantes inativos) |
 | Comentários do WordPress | comentários antigos |
 | WooCommerce | clientes e pedidos (respeitando prazo fiscal) |
-| Formulários | CF7, Fluent Forms, Forminator, Gravity Forms, WPForms — entradas enviadas |
+| Formulários | CF7, Fluent Forms, Forminator, Gravity Forms, WPForms, **Elementor Forms** — entradas enviadas (e os arquivos anexados a elas) |
 
 > 💡 **Extensível por design**
 >
@@ -132,6 +144,12 @@ Não por acidente: **nada entra na retenção automática sem você ligar** a at
 
 **Anonimizar é o mesmo que apagar?**
 Não. Anonimizar **remove o que identifica** a pessoa, mas pode **preservar a prova** de que o tratamento existiu e foi encerrado no prazo. É o recomendado pela LGPD para conciliar o direito do titular com a *accountability* da organização.
+
+**O arquivo que a pessoa anexou ao formulário some junto?**
+Sim. O descarte apaga a entrada **e** os arquivos enviados com ela (currículos, comprovantes, fotos). O mesmo vale para os documentos que o Encarregado anexa ao responder um atendimento.
+
+**Uso o formulário do Elementor. Ele entra na retenção?**
+Entra, desde que você use o **Elementor Pro** — o formulário só existe na versão paga. Ele aparece no Verificador de Formulários, pode ser vinculado a uma atividade do Inventário e é descartado como os demais, com anexos e tudo.
 
 **E se o sistema externo não souber anonimizar?**
 Para entradas de plugins de terceiros que só permitem **deletar**, a remoção da entrada **é** a ação de retenção. O V3RLGPD guarda apenas uma referência **sem dado pessoal** como comprovante.

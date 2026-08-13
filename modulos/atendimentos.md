@@ -6,7 +6,7 @@ permalink: /modulos/atendimentos/
 role: encarregado
 routes: ["#/dsar", "#/settings"]
 screenshots: [v3rlgpd-04-dsar, v3rlgpd-04c-dsar-detalhe-auto, v3rlgpd-04d-dsar-banner-revisar, v3rlgpd-04b-dsar-declaracao-escopo]
-last_verified: 2026-06-28
+last_verified: 2026-08-13
 status: publicado
 ---
 
@@ -76,6 +76,20 @@ Quando a organização declarou tratar dados **apenas neste site** e o pedido é
 ## Execução assistida
 
 Ao clicar em **Ver / Executar**, o Encarregado conta com a execução assistida: o plugin **localiza** os dados ligados àquele e-mail nos sistemas conectados, permite **exportar** e, quando o pedido autoriza, **eliminar**. Também pode **anexar documentos** à resposta enviada ao titular.
+
+### O que o Localizar enxerga
+
+Quando alguém pergunta *"quais dados vocês têm sobre mim?"*, o botão **Localizar** procura o e-mail informado em:
+
+- **Consentimentos** registrados pelo V3RLGPD (banner de cookies, formulários com checkbox).
+- **Comentários** do WordPress.
+- **Respostas de formulário** do site — Forminator, Fluent Forms, WPForms, Gravity Forms, Contact Form 7 (via Flamingo) e Elementor Forms.
+
+O **Eliminar** age sobre as mesmas origens: apaga as respostas de formulário daquela pessoa **junto com os arquivos que ela tiver enviado**. Ao final, o relatório da ação mostra **quanto foi eliminado em cada origem**, para você saber exatamente o que aconteceu — e poder registrar isso na resposta ao titular.
+
+> ⚠️ **O que ainda não entra nessa busca**
+>
+> **Contas de usuário do WordPress** e **dados do WooCommerce** (clientes e pedidos) **não** são incluídos no Localizar nem no Eliminar do atendimento. Isso está em avaliação e não é esquecimento: apagar um pedido de loja esbarra em **prazo legal de guarda fiscal**, e uma exclusão automática poderia destruir um registro que a organização é obrigada a manter. Enquanto isso, se a sua organização tem loja ou área de usuários, **confira esses sistemas manualmente** antes de responder ao titular.
 
 > ⚠️ **Atenção — eliminação é definitiva**
 >
