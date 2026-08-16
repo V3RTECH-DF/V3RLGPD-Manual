@@ -40,6 +40,14 @@ Até aqui, este manual sempre falou da gestão do V3RLGPD **dentro do painel** d
 >
 > A [Central de Privacidade](/modulos/central-privacidade/) (shortcode `[v3rlgpd_privacidade]`) é a página **pública**, para o titular exercer direitos e ler políticas. A página de **Gestão** (`[v3rlgpd_gestao]`) é o oposto: é **privada**, para quem administra a conformidade. São shortcodes diferentes, com públicos diferentes — não os coloque na mesma página.
 
+> ⚠️ **A largura do painel é a da página**
+>
+> O painel de gestão ocupa toda a largura disponível do espaço onde você colocou o shortcode. Se a página tiver uma coluna estreita, uma barra lateral ou um container com largura limitada, o painel respeita esse limite e fica igualmente estreito.
+>
+> Por isso, escolha uma **página de largura cheia**, sem barra lateral, para publicar o shortcode — o painel tem tabelas e formulários, e precisa de espaço para ficar confortável.
+>
+> Se a página já estiver publicada e o painel parecer apertado, **o ajuste é no layout da página** — a largura do container, o modelo de página do tema, ou remover a barra lateral —, não em alguma configuração do plugin. O V3RLGPD não tem um ajuste de largura próprio: ele se adapta ao espaço que o site oferece, e nunca altera o layout do site para se acomodar. Isso vale para qualquer tema ou construtor de páginas que você use.
+
 ## Quem enxerga o quê
 
 A página reage a **quem está logado** no momento em que ela carrega:
