@@ -10,7 +10,9 @@ O V3RLGPD é usado por pessoas diferentes, com objetivos diferentes. Saber em qu
 
 ## Encarregado / Administrador da organização
 
-É quem **opera** o plugin no painel do WordPress: define o **Encarregado** (em inglês, *DPO — Data Protection Officer*), cria e publica políticas, mantém o inventário, atende aos pedidos dos titulares e registra incidentes. Na maioria das organizações, é a mesma pessoa que assume o papel de Encarregado.
+É quem **opera** o plugin: define o **Encarregado** (em inglês, *DPO — Data Protection Officer*), cria e publica políticas, mantém o inventário, atende aos pedidos dos titulares e registra incidentes. Na maioria das organizações, é a mesma pessoa que assume o papel de Encarregado.
+
+Normalmente esse trabalho acontece no **painel do WordPress** (`wp-admin`). Mas muitas organizações não dão acesso ao painel a quem não é da equipe técnica — se é o seu caso, veja [Gestão no site (fora do wp-admin)](/modulos/gestao-frontend/): quem administra o site publica uma página com um shortcode e você trabalha por ali, sem precisar entrar no `wp-admin`.
 
 **Trilha sugerida:**
 

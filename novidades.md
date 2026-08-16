@@ -8,6 +8,16 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versões 1.63 a 1.65 — A gestão do V3RLGPD ganha uma porta de entrada fora do `wp-admin`
+
+Muitas organizações não dão acesso ao painel do WordPress a quem não é da equipe técnica — e isso deixava o Encarregado sem trabalho, mesmo tendo sido a pessoa nomeada pela diretoria para cuidar da LGPD. Agora existe uma segunda porta: uma página comum do site, com o shortcode `[v3rlgpd_gestao]`, abre a mesma gestão do painel — Dashboard, Auditoria, Inventário (ROPA), RIPD, Políticas e Atendimento ao Titular — com as mesmas permissões de cada papel.
+
+- Quem não está logado vê um convite para entrar; quem está logado sem papel no plugin vê um aviso de que não tem acesso — sem nenhum dado do plugin chegar ao navegador nos dois casos.
+- **Configurações**, **Equipe / Acessos**, **Shortcodes** e **Primeiros Passos** continuam exclusivos do painel do WordPress. Nas telas em que uma ação só existe lá, quem é administrador do WordPress vê um link que abre o painel em nova aba; quem só tem papel do plugin vê uma frase explicando onde aquilo se configura.
+- A página funciona também no celular.
+
+Veja em **[Gestão no site (fora do wp-admin)](/modulos/gestao-frontend/)**.
+
 ## Versões 1.60 a 1.62 — Formulários do Elementor entram na roda
 
 Quem monta as páginas com o **Elementor Pro** e usa o formulário dele ficava sem cobertura nenhuma: sem prazo de guarda, sem descarte automático, sem atendimento ao titular sobre aquelas respostas. Agora esses formulários são tratados como todos os outros:

@@ -34,6 +34,7 @@ Esta seção é a referência de consulta: uma página por módulo do plugin, ex
 - [Relatórios & Backup](/modulos/relatorios/) — relatório de conformidade e exportação total.
 - [Configurações](/modulos/configuracoes/) — as seis abas de ajustes: Encarregado, cookies, webhooks, retenção, páginas e saída de dados.
 - [Equipe / Acessos](/modulos/equipe-acessos/) — papéis e permissões da equipe (Encarregado, Atendente, Auditor).
+- [Gestão no site (fora do wp-admin)](/modulos/gestao-frontend/) — a mesma gestão do painel, numa página do site, para quem não acessa o `wp-admin`.
 - [RIPD (Relatório de Impacto)](/modulos/ripd/) — avaliar riscos de tratamentos (art. 38 LGPD / ECA Digital), com matriz de risco e versões.
 - [Denúncias (ECA Digital)](/modulos/denuncias/) — receber e tratar denúncias de conteúdo que viole direitos de crianças e adolescentes.
 
