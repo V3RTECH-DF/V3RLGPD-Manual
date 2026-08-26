@@ -9,9 +9,13 @@ Site Jekyll ([just-the-docs](https://just-the-docs.com/)) do **Manual do Usuári
 Este repositório (**[V3RTECH-DF/V3RLGPD-Manual](https://github.com/V3RTECH-DF/V3RLGPD-Manual)**) é o clone editado diretamente — não há mais espelhamento a partir de um `docs-publicos/` dentro do repo do plugin. O conteúdo é editado aqui mesmo (`Manual/`, na raiz do clone) e publicado pelo script `Projeto/bin/publish-manual.sh`, que faz commit + push do próprio clone e garante o `CNAME`. O GitHub Actions deste repo (`.github/workflows/pages.yml`) builda o Jekyll e publica no GitHub Pages a cada push.
 
 ```bash
-Projeto/bin/publish-manual.sh           # commita + empurra o pendente em Manual/ (Actions publica)
-Projeto/bin/publish-manual.sh -n        # dry-run (mostra o que mudaria, sem push)
+Projeto/bin/publish-manual.sh                    # commita + empurra o pendente em Manual/ (Actions publica)
+Projeto/bin/publish-manual.sh -m "mensagem"      # commit com mensagem personalizada
+Projeto/bin/publish-manual.sh --yes              # pula as confirmações interativas
 ```
+
+O script não tem modo dry-run — só `-m` (mensagem de commit) e `--yes`/`-y` (pula
+confirmação) são aceitos.
 
 O `CNAME` (domínio próprio) e o workflow ficam versionados aqui, na raiz deste repo.
 
