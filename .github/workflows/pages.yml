@@ -1,7 +1,7 @@
 name: Publicar manual (GitHub Pages)
 
-# Vive no repositório dedicado V3RTECH-DF/v3rlgpd-manual (na raiz).
-# É sincronizado para lá por bin/publish-manual.sh, a partir de docs-publicos/.
+# Vive no repositório dedicado V3RTECH-DF/V3RLGPD-Manual (na raiz).
+# Publicado direto por Projeto/bin/publish-manual.sh, que comita e empurra este próprio clone.
 
 on:
   push:
