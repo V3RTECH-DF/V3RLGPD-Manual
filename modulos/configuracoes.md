@@ -5,7 +5,7 @@ parent: "Módulos"
 permalink: /modulos/configuracoes/
 role: encarregado
 routes: ["#/settings"]
-screenshots: [v3rlgpd-04b-dsar-declaracao-escopo, v3rlgpd-69-config-encarregado, v3rlgpd-70-encarregado-autofill, v3rlgpd-08b-settings-cookies, v3rlgpd-08c-settings-webhooks, v3rlgpd-08d-settings-paginas, v3rlgpd-08f-settings-aparencia, v3rlgpd-08g-settings-aparencia-custom, v3rlgpd-08e-settings-saida, v3rlgpd-08i-settings-import, v3rlgpd-08h-settings-desinstalacao]
+screenshots: [v3rlgpd-04b-dsar-declaracao-escopo, v3rlgpd-69-config-encarregado, v3rlgpd-70-encarregado-autofill, v3rlgpd-08b-settings-cookies, v3rlgpd-08c-settings-webhooks, v3rlgpd-08d-settings-paginas, v3rlgpd-08f-settings-aparencia, v3rlgpd-08g-settings-aparencia-custom, v3rlgpd-08e-settings-saida, v3rlgpd-08i-settings-import, v3rlgpd-08h-settings-desinstalacao, v3rlgpd-92-config-licenca]
 last_verified: 2026-06-28
 status: publicado
 ---
@@ -164,3 +164,56 @@ Define o que acontece com os dados **se você remover o plugin** pelo painel do 
 - **Apagar tudo definitivamente** — remove todas as tabelas e registros do banco ao desinstalar. É **irreversível**, por isso o sistema pede uma confirmação antes de salvar.
 
 > 💡 **Exporte antes de apagar.** Se for desativar de vez, gere uma exportação (acima) antes de marcar "Apagar tudo".
+
+## Licença
+
+[![Configurações — Licença, com uma licença ativa](/assets/screenshots/v3rlgpd-92-config-licenca.png)](/assets/screenshots/v3rlgpd-92-config-licenca.png)
+*Licença ativa: a chave aparece sempre mascarada depois da ativação.*
+
+> 💡 **Por que isso importa**
+>
+> O V3RLGPD **funciona sem licença** — não há recurso pago que trave. A licença serve só
+> para **liberar as atualizações automáticas**, inclusive as de correção de bugs e
+> segurança. Enquanto ela não estiver ativada, o site **não recebe nada de novo**, nem os
+> ajustes que corrigem um problema sério. Ative logo depois de instalar.
+
+### Como ativar
+
+1. Abra **Configurações → Licença**.
+2. Cole a **chave de licença** (formato `V3RL-XXXX-XXXX-XXXX-XXXX`) no campo **Chave de
+   licença**.
+3. Clique em **Ativar**.
+
+> ⚠️ **A chave completa só trafega nesta tela, no momento da ativação.** Depois disso, o
+> sistema sempre mostra a versão mascarada (ex.: `V3RL-XXXX-...-B428`) — guarde a chave
+> original (e-mail de compra, gerenciador de senhas) para o caso de precisar reativar em
+> outro site.
+
+### Os campos
+
+| Campo | O que significa |
+|---|---|
+| **Status** | *Nenhuma licença ativada*, *Ativa* ou o motivo de recusa. |
+| **Chave** | A chave mascarada, depois de ativada. |
+| **Expira em** | Data-limite da assinatura; depois dela, as atualizações voltam a parar. |
+| **Ativações** | Quantos domínios já usam essa chave, sobre o limite contratado. |
+| **Última verificação** | Quando o plugin conferiu, junto ao servidor da V3RTECH, se a licença continua válida. Use **Verificar agora** para atualizar na hora. |
+
+### Ativações por domínio
+
+Uma mesma licença vale para **vários sites**, até o limite contratado — cada domínio ocupa
+uma vaga. Para trocar de servidor, use **Desativar licença** no site antigo antes de
+ativar no novo: **desativar libera a vaga** imediatamente. Ambiente de teste reconhecido
+como tal pelo servidor de licenças **não consome cota**.
+
+### Quando dá errado
+
+| Situação | O que fazer |
+|---|---|
+| Chave recusada | Confira se copiou a chave inteira, sem espaços, e se não trocou `O` por `0` ao digitar à mão. |
+| Limite de ativações atingido | Desative a licença em um site que não usa mais essa chave, ou contrate mais ativações. |
+| Licença expirada | Renove a assinatura e clique em **Verificar agora** para atualizar sem esperar a checagem automática. |
+| Servidor de licenças indisponível | O plugin segue funcionando com a última verificação válida; tente de novo em alguns minutos, e fale com o suporte se persistir por mais de um dia. |
+
+> ⚠️ **Licença vencida não desliga o plugin.** O que para é só a atualização automática —
+> o V3RLGPD continua rodando normalmente com a versão instalada.
