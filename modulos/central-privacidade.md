@@ -40,7 +40,7 @@ Há duas formas:
    - `[v3rlgpd_solicitacao]` — só o formulário de pedidos (útil numa página de Contato).
    - `[v3rlgpd_politica id="1"]` — uma política específica (ver [Políticas](/modulos/politicas/)).
    - `[v3rlgpd_dpo]` — o contato/identidade do Encarregado.
-   - `[v3rlgpd_politicas]` — todas as suas políticas ativas.
+   - `[v3rlgpd_politicas]` — a lista dos seus documentos. Sem mais nada, mostra todos os ativos; para escolher quais aparecem, veja [Filtrar quais documentos a listagem mostra](#filtrar-quais-documentos-a-listagem-mostra) mais abaixo.
    - `[v3rlgpd_cookies]` — o botão **"Alterar Preferências de Cookies"**, que reabre o painel do banner já mostrando a escolha atual do titular (ver [Consentimento & Cookies](/modulos/consentimento/)). Aparece só se o banner estiver ativo.
    - `[v3rlgpd_ropa]` — uma vitrine de transparência das atividades de tratamento (ver [Inventário (ROPA)](/modulos/inventario-ropa/)).
    - `[v3rlgpd_transparencia_menores]` — card de transparência para crianças e adolescentes (aparece só se você tratar dados de menores; ver [Transparência aos pais](/eca-digital/transparencia-aos-pais/)).
@@ -92,7 +92,7 @@ Exemplos:
 
 ## Filtrar quais documentos a listagem mostra
 
-O shortcode `[v3rlgpd_politicas]` (a listagem com **todas** as suas políticas ativas) aceita quatro atributos de filtro, combináveis entre si. Sem nenhum atributo, o comportamento é o de sempre: mostra tudo.
+O shortcode `[v3rlgpd_politicas]` aceita quatro atributos de filtro, combináveis entre si. Sem nenhum atributo, ele mostra todos os documentos ativos — o comportamento de sempre.
 
 | Atributo | Exemplo | O que faz |
 |---|---|---|

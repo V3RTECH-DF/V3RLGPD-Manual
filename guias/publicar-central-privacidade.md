@@ -35,7 +35,7 @@ Para inserir a Central (ou só o formulário) em outra página, inclusive em con
 - `[v3rlgpd_solicitacao]` — apenas o formulário de pedidos (ideal numa página de Contato).
 - `[v3rlgpd_politica id="1"]` — uma política específica, pelo seu ID (mostrado na lista de [Políticas](/modulos/politicas/)).
 - `[v3rlgpd_dpo]` — o contato/identidade do Encarregado.
-- `[v3rlgpd_politicas]` — todas as políticas ativas.
+- `[v3rlgpd_politicas]` — a lista dos seus documentos. Sem mais nada, mostra todos os ativos; dá para escolher quais aparecem — veja [Filtrar quais documentos a listagem mostra](/modulos/central-privacidade/#filtrar-quais-documentos-a-listagem-mostra).
 - `[v3rlgpd_cookies]` — preferências de cookies (só aparece com o banner ativo).
 
 > ⚠️ Ao montar uma página à mão, **não omita** o contato do Encarregado nem o formulário de solicitação — eles são exigidos pela LGPD. A Central completa autogerada já garante isso.
