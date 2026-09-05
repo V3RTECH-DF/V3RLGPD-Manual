@@ -7,7 +7,7 @@ task: publicar-politica
 role: encarregado
 routes: ["#/policies", "#/policies/new", "#/policies/assistant"]
 screenshots: [v3rlgpd-02-policies, v3rlgpd-03-policy-editor, v3rlgpd-03b-policy-externa, v3rlgpd-09-wizard]
-last_verified: 2026-06-28
+last_verified: 2026-09-05
 status: publicado
 ---
 
@@ -35,7 +35,7 @@ Antes de começar, garanta que a **razão social da organização** e o **Encarr
 ## Opção B — criar do zero (política interna)
 
 1. Em **Políticas**, clique em **+ Nova Política**.
-2. Informe o **título** e o **tipo** e mantenha a origem **Interna**. Além de privacidade, termos e cookies, sua organização pode ter criado outros tipos (estatuto, regimento, relatório…) em [Tipos de documento](/modulos/politicas/#tipos-de-documento).
+2. Informe o **título** e o **tipo** e mantenha a origem **Interna**. Além de privacidade, termos e cookies, sua organização pode ter criado outros tipos (estatuto, regimento, relatório…) em [Tipos de documento](/modulos/politicas/#tipos-de-documento). **O título que você digitar é o nome que o público vê** na Central e na listagem — inclusive para o tipo "Privacidade", que não força mais o rótulo "Política de Privacidade" se você preferir outro nome.
 3. Abra a política e, no editor, escreva o conteúdo. (Opcional: preencha o **Resumo** — ele é exibido quando a política aparece no modo "resumo".)
 
 [![Editor de política com checklist](/assets/screenshots/v3rlgpd-03-policy-editor.png)](/assets/screenshots/v3rlgpd-03-policy-editor.png)

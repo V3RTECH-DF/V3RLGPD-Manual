@@ -80,7 +80,7 @@ Na Central, a política externa aparece como um **card** com a imagem/ícone, o 
 
 > 💡 **Resumo também nas internas**
 >
-> As políticas **internas** também têm um campo de **resumo** (opcional). Ele é usado quando você exibe as políticas no modo "resumo" (veja as [opções de exibição](/modulos/central-privacidade/#opcoes-de-exibicao-das-politicas)). Se você deixar o resumo em branco, o plugin gera um trecho automático a partir do texto.
+> As políticas **internas** também têm um campo de **resumo** (opcional). Ele é usado quando você exibe as políticas no modo "resumo" (veja as [opções de exibição](/modulos/central-privacidade/#opcoes-de-exibicao-das-politicas)) — nesse modo, o resumo vem com um comando **"Ler na íntegra"** que abre o texto completo na mesma página (veja [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-integra-abre-o-documento-sem-sair-da-pagina)). Se você deixar o resumo em branco, o plugin gera um trecho automático a partir do texto.
 
 ## Versionamento e aceite
 

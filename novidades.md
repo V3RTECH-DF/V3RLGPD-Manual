@@ -8,6 +8,29 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versão 1.69 — A listagem de documentos ganha resumo e "Ler na íntegra"
+
+Um documento **interno** (redigido no editor do plugin) na Central de Privacidade ou em qualquer listagem agora aparece como **resumo + comando "Ler na íntegra"**, em vez do texto completo despejado direto na página. Um clique abre o texto na mesma tela, sem sair dela.
+
+- **A página para de crescer sem limite.** Numa organização com vários documentos (estatuto, regimento, relatórios, política, termos…), a listagem completa parava de caber numa rolagem razoável. Agora só o resumo aparece de cara.
+- **A abertura passa a contar.** O clique em "Ler na íntegra" soma no card **[Aberturas de documentos](/modulos/painel/#indicadores-de-atendimentos-dsar)** do Painel — o mesmo mecanismo que já contava o documento externo pelo botão "Ler a política completa". Antes, só o externo contava.
+- **O nome exibido é o que você cadastrou.** Um documento do tipo "Privacidade" não aparece mais sempre como "Política de Privacidade": se você deu outro nome ao seu, é esse nome que o público vê.
+
+> ⚠️ **Sem comando, sem contagem.** Se você exibe um documento só com o **título** (modo "titulo"), não há resumo nem "Ler na íntegra" — e por isso ele aparece **zerado** na métrica de aberturas. Não é sinal de que ninguém leu; é que aquele modo de exibição não tem o que contar.
+
+Veja em [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-integra-abre-o-documento-sem-sair-da-pagina) e [Políticas](/modulos/politicas/).
+
+## Versão 1.68 — Tipos de documento configuráveis, filtro na listagem e bases legais múltiplas no ROPA
+
+Uma leva de mudanças estruturais, todas no mesmo lançamento:
+
+- **Tipos de documento deixam de ser fixos.** Além de política de privacidade, termos e cookies, você agora cria, renomeia e remove os seus próprios tipos (estatuto, regimento, regulamento, relatório…) em **Documentos → Tipos de documento**. Veja [Políticas › Tipos de documento](/modulos/politicas/#tipos-de-documento).
+- **A listagem de documentos ganhou filtro.** O shortcode `[v3rlgpd_politicas]` aceita `tipo`, `ids`, `excluir` e `limite` para escolher exatamente o que aparece em cada página — a Central de Privacidade, por exemplo, passou a mostrar só privacidade e cookies por padrão. Veja [Central de Privacidade › Filtrar quais documentos a listagem mostra](/modulos/central-privacidade/#filtrar-quais-documentos-a-listagem-mostra).
+- **O Inventário (ROPA) aceita mais de uma base legal por atividade.** Uma atividade real muitas vezes se apoia em duas bases ao mesmo tempo (por exemplo, execução de contrato **e** cumprimento de obrigação legal) — agora dá para marcar as duas, em vez de forçar uma escolha artificial. Veja [Inventário (ROPA) › O que registrar em cada atividade](/modulos/inventario-ropa/#o-que-registrar-em-cada-atividade).
+- **A métrica "Aberturas de documentos" mudou de natureza** — de contar carregamento de página para contar abertura de documento. Já detalhado em [Painel › Indicadores de atendimentos (DSAR)](/modulos/painel/#indicadores-de-atendimentos-dsar).
+
+> 🔧 **Correções:** caixas de marcação e botões de opção apareciam colados no texto da opção (Origem dos Dados e outras telas de múltipla escolha) — o espaçamento foi corrigido. E o cursor de mão, que não aparecia em nenhum botão do painel ao passar o mouse, voltou a indicar quando um elemento é clicável.
+
 ## Versões 1.63 a 1.65 — A gestão do V3RLGPD ganha uma porta de entrada fora do `wp-admin`
 
 Muitas organizações não dão acesso ao painel do WordPress a quem não é da equipe técnica — e isso deixava o Encarregado sem trabalho, mesmo tendo sido a pessoa nomeada pela diretoria para cuidar da LGPD. Agora existe uma segunda porta: uma página comum do site, com o shortcode `[v3rlgpd_gestao]`, abre a mesma gestão do painel — Dashboard, Auditoria, Inventário (ROPA), RIPD, Políticas e Atendimento ao Titular — com as mesmas permissões de cada papel.

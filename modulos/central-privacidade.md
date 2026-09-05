@@ -5,7 +5,7 @@ parent: "Módulos"
 permalink: /modulos/central-privacidade/
 role: titular
 routes: ["/central-de-privacidade/"]
-screenshots: [v3rlgpd-22-dsar-form, v3rlgpd-72-central-encarregado, v3rlgpd-08d-settings-paginas]
+screenshots: [v3rlgpd-22-dsar-form, v3rlgpd-72-central-encarregado, v3rlgpd-08d-settings-paginas, v3rlgpd-100-central-resumo-fechado-desktop, v3rlgpd-100-central-resumo-fechado-mobile, v3rlgpd-101-central-resumo-aberto-desktop, v3rlgpd-101-central-resumo-aberto-mobile]
 last_verified: 2026-09-05
 status: publicado
 ---
@@ -21,7 +21,7 @@ A **Central de Privacidade** é a página **pública** do seu site onde o titula
 
 - **Exercício de Direitos** — um formulário para abrir pedidos (acesso, correção, exclusão, portabilidade, revogação, informação sobre compartilhamento, outro).
 - **Identidade de Privacidade** — nome/setor, e-mail e telefone do Encarregado, para contato direto.
-- **Política de Privacidade** — a **versão ativa**, exibida na íntegra. Só políticas ativas aparecem — uma política [inativada](/modulos/politicas/#inativar-e-reativar-uma-politica) some da Central automaticamente.
+- **Política de Privacidade** — a **versão ativa**, com o **nome que a sua organização cadastrou** para o documento (se você chamou o documento de "Política de Proteção de Dados Pessoais", é esse nome que aparece — não mais um rótulo fixo). Só políticas ativas aparecem — uma política [inativada](/modulos/politicas/#inativar-e-reativar-uma-politica) some da Central automaticamente.
 
 [![Contato do Encarregado na Central pública](/assets/screenshots/v3rlgpd-72-central-encarregado.png)](/assets/screenshots/v3rlgpd-72-central-encarregado.png)
 *O bloco de contato traz o **Encarregado** (com a sigla "DPO" só como equivalência na 1ª menção). Esses são os dados cadastrados em [Configurações → Encarregado](/modulos/configuracoes/#encarregado).*
@@ -93,6 +93,28 @@ Exemplos:
 > 💡 **Combinações seguras**
 >
 > O plugin nunca deixa um bloco totalmente vazio: se você ocultar tudo de uma vez, ele exibe ao menos o título.
+
+### No modo "resumo", "Ler na íntegra" abre o documento sem sair da página
+
+Um documento **interno** (redigido no editor do plugin, diferente do externo por link) exibido no modo **resumo** — o padrão — mostra o resumo e um comando **"Ler na íntegra"**. Clicar não leva a outra página: o texto completo abre **ali mesmo**, embaixo do resumo.
+
+[![Documento com resumo fechado e o comando Ler na íntegra](/assets/screenshots/v3rlgpd-100-central-resumo-fechado-desktop.png)](/assets/screenshots/v3rlgpd-100-central-resumo-fechado-desktop.png)
+*Fechado: resumo e o comando "Ler na íntegra".*
+
+[![Documento expandido mostrando o texto completo](/assets/screenshots/v3rlgpd-101-central-resumo-aberto-desktop.png)](/assets/screenshots/v3rlgpd-101-central-resumo-aberto-desktop.png)
+*Um clique depois: o texto completo aparece na mesma tela, sem recarregar nada.*
+
+> 💡 **Por que isso importa**
+>
+> Antes, a listagem despejava o **texto completo de cada documento interno** direto na página — numa organização com vários documentos (estatuto, regimento, relatórios, política, termos), a página crescia sem limite, e não dava para saber quem realmente lia cada um. Agora só o resumo aparece de cara, e abrir é uma ação que o plugin consegue contar.
+>
+> Esse clique passa a valer para o card **Aberturas de documentos** do [Painel](/modulos/painel/#indicadores-de-atendimentos-dsar) — o **mesmo** mecanismo que já contava a política externa pelo botão "Ler a política completa". Antes desta versão, só o documento externo contava; agora os dois contam da mesma forma.
+>
+> O comando funciona **sem JavaScript** e é operável por teclado e por leitor de tela — o texto já está na página, o script só registra que alguém abriu.
+
+> ⚠️ **No modo "titulo", não há o que contar**
+>
+> Se você configurar o documento para aparecer só com o **título** (`modo="titulo"`), não existe resumo nem comando de abertura — logo, não há clique para registrar. Um documento nesse modo aparece **zerado** na métrica de aberturas, e isso **não significa que ninguém o leu**: significa que a exibição escolhida não tem como contar. Se isso incomodar, mude o modo de exibição daquele documento para "resumo".
 
 ## Filtrar quais documentos a listagem mostra
 

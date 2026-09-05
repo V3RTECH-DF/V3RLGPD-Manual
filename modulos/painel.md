@@ -61,6 +61,10 @@ Há ainda o **Ranking de Solicitações** (quais tipos de pedido mais aparecem) 
 >
 > A vantagem prática: agora dá para saber **quais documentos** são realmente lidos (a lista de mais abertos aparece no próprio card), não só que "alguma página carregou".
 
+> ℹ️ **Documento interno também conta, desde que tenha o que abrir**
+>
+> Até pouco tempo, só o documento **externo** (por link) contava aqui, pelo clique em "Ler a política completa". Um documento **interno** exibido no modo "resumo" agora conta do mesmo jeito, pelo comando **"Ler na íntegra"** — veja [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-integra-abre-o-documento-sem-sair-da-pagina). Documento exibido só com o **título** não tem comando de abertura, então aparece zerado aqui — não é ausência de leitura, é ausência de clique possível.
+
 > 💡 **Por que isso importa**
 >
 > Esses números são ótimos para **prestar contas**: mostram a financiadores e ao conselho que a organização atende titulares com agilidade e que seus documentos são efetivamente lidos. É accountability na prática — você demonstra cuidado com dados, não só afirma.
