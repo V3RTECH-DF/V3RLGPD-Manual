@@ -4,9 +4,9 @@ nav_order: 2
 parent: "Módulos"
 permalink: /modulos/politicas/
 role: encarregado
-routes: ["#/policies", "#/policies/edit/:id", "#/policies/assistant", "#/templates"]
-screenshots: [v3rlgpd-02-policies, v3rlgpd-03-policy-editor, v3rlgpd-09-wizard, v3rlgpd-11-templates]
-last_verified: 2026-06-28
+routes: ["#/policies", "#/policies/edit/:id", "#/policies/assistant", "#/templates", "#/policies/types"]
+screenshots: [v3rlgpd-02-policies, v3rlgpd-03-policy-editor, v3rlgpd-09-wizard, v3rlgpd-11-templates, v3rlgpd-95-document-types, v3rlgpd-96-document-types-remove]
+last_verified: 2026-09-05
 status: publicado
 ---
 
@@ -24,6 +24,41 @@ O módulo **Políticas** é onde sua organização cria, versiona e publica os d
 ## Ambiente genérico de políticas
 
 O V3RLGPD **não entrega políticas prontas**. Ele dá a estrutura para você criar **quantas quiser** — e só a **Política de Privacidade** vem com um checklist e modelo-base, por ser exigência direta da LGPD.
+
+## Tipos de documento
+
+O módulo não serve só a políticas de privacidade: ele abriga **qualquer documento institucional** — estatuto, regimento, regulamento, relatório de atividades, e o que a sua organização precisar publicar. O que classifica cada documento é o **tipo**, e você mesmo cria, renomeia e remove os tipos, sem depender de ninguém mexer em código.
+
+Em **Políticas**, clique em **Tipos de documento** para abrir a tela de gerenciamento.
+
+[![Tela de Tipos de documento](/assets/screenshots/v3rlgpd-95-document-types.png)](/assets/screenshots/v3rlgpd-95-document-types.png)
+*Cada tipo mostra quantos documentos usa ele; o tipo Privacidade vem marcado como "Fixo".*
+
+A sua organização já começa com um conjunto pronto — privacidade, termos de uso, cookies, estatuto, regimento, regulamento e relatório —, para não precisar partir de uma lista vazia.
+
+> 💡 **Por que isso importa**
+>
+> É o tipo que permite filtrar quais documentos aparecem numa listagem — por exemplo, mostrar só as políticas de privacidade e cookies na Central, e tudo (inclusive o estatuto e os relatórios) numa página de Transparência. Veja [Escolher quais documentos uma listagem mostra](/modulos/central-privacidade/#filtrar-quais-documentos-a-listagem-mostra).
+
+**Criar um tipo novo** é só digitar o nome (ex.: "Regulamento de bolsas") e clicar em **Adicionar**.
+
+**Renomear** um tipo muda **só o rótulo exibido** — o identificador interno que prende cada documento ao seu tipo nunca muda. É por isso que renomear é seguro mesmo com documentos já classificados: nada se desclassifica.
+
+> ⚠️ **A armadilha mais comum aqui não é criar — é remover um tipo que já está em uso**
+>
+> Ao clicar em **Remover** num tipo que tem documentos classificados nele, o sistema **recusa a remoção direta** e mostra quantos documentos estão ali. Você decide:
+>
+> [![Diálogo de remoção de tipo em uso](/assets/screenshots/v3rlgpd-96-document-types-remove.png)](/assets/screenshots/v3rlgpd-96-document-types-remove.png)
+> *O diálogo obriga uma decisão: reclassificar para outro tipo, ou manter os documentos como estão.*
+>
+> - **Reclassificar para outro tipo** — os documentos passam a valer para o tipo que você escolher.
+> - **Manter a classificação atual** — o tipo sai da lista, mas os documentos continuam com ele; até serem reclassificados, aparecem com o identificador cru em vez do nome bonito.
+>
+> Nada é apagado em nenhum dos dois caminhos — a decisão existe justamente para que você não perca, sem perceber, o que cada documento era.
+
+> ✅ **O tipo "Privacidade" nunca pode ser removido**
+>
+> É dele que a [Central de Privacidade](/modulos/central-privacidade/) depende para saber o que exibir e se há política publicada. O botão **Remover** fica desativado para ele — você ainda pode renomear o rótulo exibido, mas o identificador interno `privacy` é intocável. Nenhum outro tipo carrega esse tipo de comportamento embutido.
 
 ## Política interna ou externa (link)
 

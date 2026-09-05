@@ -5,8 +5,8 @@ parent: "Módulos"
 permalink: /modulos/painel/
 role: encarregado
 routes: ["#/", "#/wizard"]
-screenshots: [v3rlgpd-01-dashboard, v3rlgpd-01b-dashboard-selo, v3rlgpd-50-mapa-conformidade, v3rlgpd-40-anpd-news]
-last_verified: 2026-06-28
+screenshots: [v3rlgpd-01-dashboard, v3rlgpd-01b-dashboard-selo, v3rlgpd-50-mapa-conformidade, v3rlgpd-40-anpd-news, v3rlgpd-97-dashboard-opens]
+last_verified: 2026-09-05
 status: publicado
 ---
 
@@ -48,11 +48,22 @@ Quatro números acompanham a saúde do atendimento aos titulares:
 - **Concluídas** — pedidos já resolvidos.
 - **Tempo Médio de Resposta** — quanto sua organização costuma levar.
 
-Há ainda o **Ranking de Solicitações** (quais tipos de pedido mais aparecem) e as **Visualizações das Políticas** (quantas vezes o público acessou suas políticas).
+Há ainda o **Ranking de Solicitações** (quais tipos de pedido mais aparecem) e o card **Aberturas de documentos**.
+
+[![Painel — card Aberturas de documentos](/assets/screenshots/v3rlgpd-97-dashboard-opens.png)](/assets/screenshots/v3rlgpd-97-dashboard-opens.png)
+*O card mostra o total de aberturas, a data em que a contagem começou e, quando já há dado suficiente, os documentos mais lidos.*
+
+> ⚠️ **Este número mudou de natureza — não é só um nome novo**
+>
+> Antes, o painel contava **carregamentos de página**: um único contador global, que somava toda vez que a página pública com o shortcode de política carregava — inclusive de quem nunca chegou a ler nada, e inclusive de robôs passando pelo rodapé do site. Agora ele conta **abertura de documento**: o clique de alguém que efetivamente foi ler aquele documento específico, contado **por documento**.
+>
+> Por serem coisas diferentes, o número **recomeçou do zero** quando a mudança entrou — e é por isso que o card mostra a data de início da contagem. Se você abrir o painel e ver um número bem menor que o de antes, **não é perda de dado**: é uma métrica nova e mais fiel substituindo uma que inflava sozinha.
+>
+> A vantagem prática: agora dá para saber **quais documentos** são realmente lidos (a lista de mais abertos aparece no próprio card), não só que "alguma página carregou".
 
 > 💡 **Por que isso importa**
 >
-> Esses números são ótimos para **prestar contas**: mostram a financiadores e ao conselho que a organização atende titulares com agilidade e que suas políticas são efetivamente lidas. É accountability na prática — você demonstra cuidado com dados, não só afirma.
+> Esses números são ótimos para **prestar contas**: mostram a financiadores e ao conselho que a organização atende titulares com agilidade e que seus documentos são efetivamente lidos. É accountability na prática — você demonstra cuidado com dados, não só afirma.
 
 ## Alertas e pendências
 

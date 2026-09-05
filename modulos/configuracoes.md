@@ -5,8 +5,8 @@ parent: "Módulos"
 permalink: /modulos/configuracoes/
 role: encarregado
 routes: ["#/settings"]
-screenshots: [v3rlgpd-04b-dsar-declaracao-escopo, v3rlgpd-69-config-encarregado, v3rlgpd-70-encarregado-autofill, v3rlgpd-08b-settings-cookies, v3rlgpd-08c-settings-webhooks, v3rlgpd-08d-settings-paginas, v3rlgpd-08f-settings-aparencia, v3rlgpd-08g-settings-aparencia-custom, v3rlgpd-08e-settings-saida, v3rlgpd-08i-settings-import, v3rlgpd-08h-settings-desinstalacao, v3rlgpd-92-config-licenca]
-last_verified: 2026-06-28
+screenshots: [v3rlgpd-04b-dsar-declaracao-escopo, v3rlgpd-69-config-encarregado, v3rlgpd-70-encarregado-autofill, v3rlgpd-08b-settings-cookies, v3rlgpd-08c-settings-webhooks, v3rlgpd-08d-settings-paginas, v3rlgpd-08f-settings-aparencia, v3rlgpd-08g-settings-aparencia-custom, v3rlgpd-08e-settings-saida, v3rlgpd-08i-settings-import, v3rlgpd-08h-settings-desinstalacao, v3rlgpd-92-config-licenca, v3rlgpd-99-licenca-sem-ativar]
+last_verified: 2026-09-05
 status: publicado
 ---
 
@@ -167,15 +167,19 @@ Define o que acontece com os dados **se você remover o plugin** pelo painel do 
 
 ## Licença
 
-[![Configurações — Licença, com uma licença ativa](/assets/screenshots/v3rlgpd-92-config-licenca.png)](/assets/screenshots/v3rlgpd-92-config-licenca.png)
-*Licença ativa: a chave aparece sempre mascarada depois da ativação.*
-
 > 💡 **Por que isso importa**
 >
 > O V3RLGPD **funciona sem licença** — não há recurso pago que trave. A licença serve só
 > para **liberar as atualizações automáticas**, inclusive as de correção de bugs e
 > segurança. Enquanto ela não estiver ativada, o site **não recebe nada de novo**, nem os
 > ajustes que corrigem um problema sério. Ative logo depois de instalar.
+
+### Antes de ativar
+
+[![Configurações — Licença, sem nenhuma ativada](/assets/screenshots/v3rlgpd-99-licenca-sem-ativar.png)](/assets/screenshots/v3rlgpd-99-licenca-sem-ativar.png)
+*Sem licença ativada, os campos aparecem como "—" e não há botão de verificação — não haveria o que verificar.*
+
+Sem nenhuma licença ativada, a tela mostra só o campo para colar a chave. Os campos **Chave**, **Expira em**, **Ativações** e **Última verificação** aparecem como "—", e **não existe** o botão de verificar — ele só faz sentido depois que existe uma licença para conferir.
 
 ### Como ativar
 
@@ -189,12 +193,15 @@ Define o que acontece com os dados **se você remover o plugin** pelo painel do 
 > original (e-mail de compra, gerenciador de senhas) para o caso de precisar reativar em
 > outro site.
 
-### Os campos
+### Depois de ativada
+
+[![Configurações — Licença, com uma licença ativa](/assets/screenshots/v3rlgpd-92-config-licenca.png)](/assets/screenshots/v3rlgpd-92-config-licenca.png)
+*Licença ativa: a chave aparece sempre mascarada depois da ativação.*
 
 | Campo | O que significa |
 |---|---|
-| **Status** | *Nenhuma licença ativada*, *Ativa* ou o motivo de recusa. |
-| **Chave** | A chave mascarada, depois de ativada. |
+| **Status** | *Ativa* ou o motivo de recusa. |
+| **Chave** | A chave mascarada. |
 | **Expira em** | Data-limite da assinatura; depois dela, as atualizações voltam a parar. |
 | **Ativações** | Quantos domínios já usam essa chave, sobre o limite contratado. |
 | **Última verificação** | Quando o plugin conferiu, junto ao servidor da V3RTECH, se a licença continua válida. Use **Verificar agora** para atualizar na hora. |

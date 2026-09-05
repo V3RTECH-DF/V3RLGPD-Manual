@@ -5,8 +5,8 @@ parent: "Módulos"
 permalink: /modulos/inventario-ropa/
 role: encarregado
 routes: ["#/ropa", "#/ropa/report", "#/ropa/assistant"]
-screenshots: [v3rlgpd-06-ropa, v3rlgpd-34-assistente-intro, v3rlgpd-35-assistente-perguntas, v3rlgpd-37-assistente-conclusao, v3rlgpd-75-ropa-transferencia-mecanismo]
-last_verified: 2026-07-19
+screenshots: [v3rlgpd-06-ropa, v3rlgpd-34-assistente-intro, v3rlgpd-35-assistente-perguntas, v3rlgpd-37-assistente-conclusao, v3rlgpd-75-ropa-transferencia-mecanismo, v3rlgpd-98-ropa-multi-base]
+last_verified: 2026-09-05
 status: publicado
 ---
 
@@ -41,7 +41,18 @@ Como funciona, em poucos passos:
 
 - **Atividade** — o que sua organização faz (ex.: "Cadastro de voluntários", "Newsletter de doadores").
 - **Dados Pessoais** — quais dados são coletados (nome, CPF, telefone, e-mail…).
-- **Base Legal** — o fundamento que autoriza o tratamento (execução de contrato, consentimento, obrigação legal…). Veja [Conceitos](/conceitos-lgpd/#as-bases-legais-art-7º-e-11).
+- **Base Legal** — o fundamento que autoriza o tratamento (execução de contrato, consentimento, obrigação legal…). **Aceita mais de uma marcada ao mesmo tempo** — o mesmo padrão do campo Origem dos Dados, logo abaixo. É obrigatório marcar ao menos uma. Veja [Conceitos](/conceitos-lgpd/#as-bases-legais-art-7º-e-11).
+
+  [![Campo Base Legal com múltiplas opções marcadas](/assets/screenshots/v3rlgpd-98-ropa-multi-base.png)](/assets/screenshots/v3rlgpd-98-ropa-multi-base.png)
+  *Uma atividade pode se apoiar em mais de uma base — aqui, Execução de contrato e Legítimo interesse ao mesmo tempo.*
+
+  > 📖 **Exemplo (grupo escoteiro)**
+  >
+  > O cadastro de um voluntário pode se apoiar em **execução de contrato** (o termo de voluntariado que ele assina) **e** em **cumprimento de obrigação legal** (o registro que a lei do voluntariado exige). Marcando as duas, a atividade fica mais fiel ao que realmente acontece — em vez de forçar uma escolha única e artificial entre elas.
+
+  > 💡 **A sugestão de retenção usa a primeira base com sugestão**
+  >
+  > Quando mais de uma base está marcada, o prazo de retenção sugerido automaticamente vem da primeira base (na ordem da lista) que tiver uma sugestão associada — e só preenche o campo se ele estiver vazio ou ainda tiver a sugestão anterior. É um palpite editável, não uma regra: se você já digitou um prazo à mão, ele não é sobrescrito.
 - **Transferência Internacional** — se os dados saem do Brasil (ex.: um serviço hospedado no exterior). Ao marcar essa opção, você informa também o **país(es) de destino** e o **mecanismo de proteção (art. 33)** — a base legal que permite os dados saírem do Brasil. Na dúvida, para fornecedores dos Estados Unidos ou da Europa, o mais comum é **"Cláusulas-padrão contratuais"**. Há ainda um campo opcional **"Detalhe da garantia"** para anotar, por exemplo, a cláusula ou a certificação que sustenta a transferência. Esse mecanismo aparece nos relatórios e é usado pelo [Assistente de Políticas](/modulos/politicas/) para redigir a cláusula de transferência internacional.
 
 [![Campos de transferência internacional com o mecanismo de proteção do art. 33](/assets/screenshots/v3rlgpd-75-ropa-transferencia-mecanismo.png)](/assets/screenshots/v3rlgpd-75-ropa-transferencia-mecanismo.png)

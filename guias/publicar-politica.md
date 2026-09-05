@@ -35,7 +35,7 @@ Antes de começar, garanta que a **razão social da organização** e o **Encarr
 ## Opção B — criar do zero (política interna)
 
 1. Em **Políticas**, clique em **+ Nova Política**.
-2. Informe o **título** e o **tipo** (privacidade, termos, cookies ou outro) e mantenha a origem **Interna**.
+2. Informe o **título** e o **tipo** e mantenha a origem **Interna**. Além de privacidade, termos e cookies, sua organização pode ter criado outros tipos (estatuto, regimento, relatório…) em [Tipos de documento](/modulos/politicas/#tipos-de-documento).
 3. Abra a política e, no editor, escreva o conteúdo. (Opcional: preencha o **Resumo** — ele é exibido quando a política aparece no modo "resumo".)
 
 [![Editor de política com checklist](/assets/screenshots/v3rlgpd-03-policy-editor.png)](/assets/screenshots/v3rlgpd-03-policy-editor.png)

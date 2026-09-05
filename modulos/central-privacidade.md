@@ -6,7 +6,7 @@ permalink: /modulos/central-privacidade/
 role: titular
 routes: ["/central-de-privacidade/"]
 screenshots: [v3rlgpd-22-dsar-form, v3rlgpd-72-central-encarregado, v3rlgpd-08d-settings-paginas]
-last_verified: 2026-06-24
+last_verified: 2026-09-05
 status: publicado
 ---
 
@@ -89,6 +89,25 @@ Exemplos:
 > 💡 **Combinações seguras**
 >
 > O plugin nunca deixa um bloco totalmente vazio: se você ocultar tudo de uma vez, ele exibe ao menos o título.
+
+## Filtrar quais documentos a listagem mostra
+
+O shortcode `[v3rlgpd_politicas]` (a listagem com **todas** as suas políticas ativas) aceita quatro atributos de filtro, combináveis entre si. Sem nenhum atributo, o comportamento é o de sempre: mostra tudo.
+
+| Atributo | Exemplo | O que faz |
+|---|---|---|
+| `tipo` | `tipo="privacy,cookies"` | Mostra só os documentos dos [tipos](/modulos/politicas/#tipos-de-documento) listados |
+| `ids` | `ids="4,1,3"` | Mostra só os documentos informados, **na ordem** em que você os listou |
+| `excluir` | `excluir="15,16"` | Mostra tudo, menos os documentos informados |
+| `limite` | `limite="5"` | Corta a lista nos primeiros N documentos |
+
+> 💡 **Dois usos reais**
+>
+> Uma Central de Privacidade que mostra só o que é de privacidade e cookies, e se atualiza sozinha quando você publica um documento novo desse tipo — sem precisar editar a página. E uma página de Transparência, sem nenhum filtro, mostrando tudo (inclusive estatuto, regimento e relatórios).
+
+> ⚠️ **A Central de Privacidade passou a filtrar por padrão**
+>
+> A Central completa (gerada automaticamente ou pelo shortcode `[v3rlgpd_privacidade]`) agora só mostra os tipos **privacidade e cookies** — antes mostrava todos os documentos ativos, o que incluía relatórios anuais e outros documentos que não são de privacidade. Se a sua organização usa a Central para exibir também **termos de uso** ou outro tipo, ele **some da página** até você acrescentá-lo ao filtro: `[v3rlgpd_privacidade tipo="privacy,cookies,terms"]`. A página de Transparência (sem atributo) continua mostrando tudo, sem mudança.
 
 ➡️ Passo a passo em **[Publicar a Central de Privacidade](/guias/publicar-central-privacidade/)**.
 
