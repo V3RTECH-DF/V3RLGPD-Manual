@@ -38,6 +38,8 @@ Para inserir a Central (ou só o formulário) em outra página, inclusive em con
 - `[v3rlgpd_politicas]` — a lista dos seus documentos. Sem mais nada, mostra todos os ativos; dá para escolher quais aparecem — veja [Filtrar quais documentos a listagem mostra](/modulos/central-privacidade/#filtrar-quais-documentos-a-listagem-mostra).
 - `[v3rlgpd_cookies]` — preferências de cookies (só aparece com o banner ativo).
 
+Estes são os que servem para montar uma Central à mão. O plugin tem **onze** no total — a lista completa, com o que cada um faz, está em [Central de Privacidade](/modulos/central-privacidade/#como-publicar-a-central), e também dentro do plugin, em **Configurações → Shortcodes Disponíveis**.
+
 > ⚠️ Ao montar uma página à mão, **não omita** o contato do Encarregado nem o formulário de solicitação — eles são exigidos pela LGPD. A Central completa autogerada já garante isso.
 
 ### Designe a sua página como a Central
