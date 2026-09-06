@@ -41,4 +41,4 @@ Um documento de uma página que mostra, em PDF, como anda a conformidade da sua 
 
 ## Backup completo
 
-Para exportar **todos os dados** do plugin (e não só o panorama), use **Configurações → Saída de Dados → Gerar Arquivo de Backup (ZIP)**. Veja [Relatórios & Backup](/modulos/relatorios/#backup--exportação-total).
+Para exportar **todos os dados** do plugin (e não só o panorama), use **Configurações → Saída de Dados → Gerar Arquivo de Backup (ZIP)**. Veja [Relatórios & Backup](/modulos/relatorios/#backup-exportação-total).

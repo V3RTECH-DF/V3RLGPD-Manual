@@ -34,7 +34,7 @@ Logo abaixo do anel aparece o **Selo de Conformidade** (o mesmo que você pode e
 
 > ℹ️ Os **atestados** (autodeclaração) e o detalhamento artigo a artigo ficam no **[Mapa de Conformidade](#mapa-de-conformidade)** — acesse pelo botão **"Ver mapa completo"** ou pelo menu.
 
-> ℹ️ Se você **[inativar](/modulos/politicas/#inativar-e-reativar-uma-politica)** a Política de Privacidade, o item "Política de Privacidade Ativa" deixa de contar aqui — reative-a para o indicador voltar.
+> ℹ️ Se você **[inativar](/modulos/politicas/#inativar-e-reativar-uma-política)** a Política de Privacidade, o item "Política de Privacidade Ativa" deixa de contar aqui — reative-a para o indicador voltar.
 
 > ⚠️ **Atenção**
 >
@@ -63,7 +63,7 @@ Há ainda o **Ranking de Solicitações** (quais tipos de pedido mais aparecem) 
 
 > ℹ️ **Documento interno também conta, desde que tenha o que abrir**
 >
-> Até pouco tempo, só o documento **externo** (por link) contava aqui, pelo clique em "Ler a política completa". Um documento **interno** exibido no modo "resumo" agora conta do mesmo jeito, pelo comando **"Ler na íntegra"** — veja [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-integra-abre-o-documento-sem-sair-da-pagina). Documento exibido só com o **título** não tem comando de abertura, então aparece zerado aqui — não é ausência de leitura, é ausência de clique possível.
+> Até pouco tempo, só o documento **externo** (por link) contava aqui, pelo clique em "Abrir o documento". Um documento **interno** exibido no modo "resumo" agora conta do mesmo jeito, pelo comando **"Ler na íntegra"** — veja [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-íntegra-abre-o-documento-sem-sair-da-página). Documento exibido só com o **título** não tem comando de abertura, então aparece zerado aqui — não é ausência de leitura, é ausência de clique possível.
 
 > 💡 **Por que isso importa**
 >

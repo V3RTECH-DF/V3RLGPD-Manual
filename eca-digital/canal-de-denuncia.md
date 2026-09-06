@@ -21,6 +21,12 @@ Se o seu site tem **conteúdo gerado por usuário** (comentários, fórum, mural
 Coloque o shortcode `[v3rlgpd_denuncia]` numa página pública. Ele exibe um formulário que **exige identificação** do conteúdo e do denunciante (**denúncia anônima não é permitida**, art. 29 §2) e tem proteção anti-spam.
 <!-- screenshot: den-01 — formulário público de denúncia -->
 
+Como todo bloco do plugin, ele aceita os atributos `titulo`, `descricao`, `nivel` e `classe` para se encaixar no layout da sua página (veja [Controle o layout de cada bloco](/guias/publicar-central-privacidade/#controle-o-layout-de-cada-bloco-título-descrição-nível-e-classe)).
+
+### O aviso de identificação não é ocultável
+
+`descricao="nao"` some com o texto de apoio em quase todo bloco do plugin, mas **não** neste. O aviso de que a denúncia é identificada — nunca anônima — não é texto de apoio, é a **condição de uso** do formulário (art. 29 §2). Escondê-lo faria alguém preencher e enviar acreditando estar anônimo, o que a lei não permite. Ele continua aparecendo mesmo com `descricao="nao"`.
+
 ## Triagem no painel
 
 Em **Denúncias**, o encarregado vê as denúncias recebidas, abre cada uma e **muda o status** (Recebida → Em análise → Conteúdo removido / Improcedente), registrando a **justificativa**.

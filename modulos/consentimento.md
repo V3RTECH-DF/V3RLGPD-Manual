@@ -5,8 +5,8 @@ parent: "Módulos"
 permalink: /modulos/consentimento/
 role: encarregado
 routes: ["/central-de-privacidade/", "#/settings"]
-screenshots: [v3rlgpd-21-cookie-banner, v3rlgpd-08b-settings-cookies]
-last_verified: 2026-07-17
+screenshots: [v3rlgpd-21-cookie-banner, v3rlgpd-08b-settings-cookies, v3rlgpd-103-cookies-escolha-vigente, v3rlgpd-104-cookies-sem-escolha]
+last_verified: 2026-09-05
 status: publicado
 ---
 
@@ -67,6 +67,20 @@ Melhor: ele **tenta identificar de onde cada um vem** e ajusta o conselho confor
 ### Mudar de ideia depois
 
 O consentimento não é uma escolha definitiva: o titular pode revê-la quando quiser. Na **Central de Privacidade**, o botão **"Alterar Preferências de Cookies"** reabre o painel **já mostrando o que ele escolheu antes** — as categorias aceitas aparecem marcadas. Ele ajusta o que quiser e salva.
+
+Esse botão pode aparecer sozinho em qualquer página, pelo shortcode `[v3rlgpd_cookies]` — útil num rodapé, ou numa página de política que não usa a Central completa. Diferente da versão dentro da Central, este bloco **diz qual é a escolha vigente do visitante** antes do botão, algo como *"Sua escolha atual: cookies necessários e analíticos"*.
+
+[![Bloco de cookies mostrando a escolha vigente do visitante](/assets/screenshots/v3rlgpd-103-cookies-escolha-vigente.png)](/assets/screenshots/v3rlgpd-103-cookies-escolha-vigente.png)
+*Quem já escolheu vê exatamente o que aceitou.*
+
+Quem nunca escolheu nada vê uma frase dizendo isso, não uma escolha inventada — o plugin não assume "aceitou tudo" nem "recusou tudo" quando não há decisão registrada.
+
+[![Bloco de cookies sem escolha registrada](/assets/screenshots/v3rlgpd-104-cookies-sem-escolha.png)](/assets/screenshots/v3rlgpd-104-cookies-sem-escolha.png)
+*Antes de qualquer escolha, o bloco diz isso — em vez de inventar uma.*
+
+> 💡 **A leitura é sempre do navegador, nunca do servidor**
+>
+> A página que hospeda este bloco costuma ser a mesma que um cache de página inteira guarda e serve a todo mundo igual. Se o texto da escolha viesse do servidor, a escolha de um visitante apareceria para os seguintes — um vazamento de informação entre pessoas diferentes. Por isso quem lê o cookie e escreve a frase é o navegador de cada um, depois que a página carrega.
 
 > 💡 **Revogar vale na hora**
 >

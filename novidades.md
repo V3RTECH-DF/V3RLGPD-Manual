@@ -18,7 +18,7 @@ Um documento **interno** (redigido no editor do plugin) na Central de Privacidad
 
 > ⚠️ **Sem comando, sem contagem.** Se você exibe um documento só com o **título** (modo "titulo"), não há resumo nem "Ler na íntegra" — e por isso ele aparece **zerado** na métrica de aberturas. Não é sinal de que ninguém leu; é que aquele modo de exibição não tem o que contar.
 
-Veja em [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-integra-abre-o-documento-sem-sair-da-pagina) e [Políticas](/modulos/politicas/).
+Veja em [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-íntegra-abre-o-documento-sem-sair-da-página) e [Políticas](/modulos/politicas/).
 
 ## Versão 1.68 — Tipos de documento configuráveis, filtro na listagem e bases legais múltiplas no ROPA
 
@@ -284,7 +284,7 @@ Completando a família de assistentes (Inventário e RIPD), agora **criar uma Po
 - **Você decide quando publicar** — o padrão é **salvar como rascunho** para aprovação interna; publicar é uma escolha explícita. O texto é um ponto de partida (modelos de mercado) e **não substitui revisão jurídica**.
 - **Novo cadastro da Organização** — em Configurações há uma aba **Organização** (razão social, CNPJ, endereço, contato), reaproveitada nas políticas e nos relatórios.
 
-> Em **Políticas**, botão **🪄 Usar Assistente**. Passo a passo em [Publicar uma política](/guias/publicar-politica/); detalhes em [Políticas › O Assistente](/modulos/politicas/#o-assistente-de-politicas). O assistente **ajuda** a redigir; **não** substitui revisão jurídica nem garante validade legal.
+> Em **Políticas**, botão **🪄 Usar Assistente**. Passo a passo em [Publicar uma política](/guias/publicar-politica/); detalhes em [Políticas › O Assistente](/modulos/politicas/#o-assistente-de-políticas). O assistente **ajuda** a redigir; **não** substitui revisão jurídica nem garante validade legal.
 
 ## Versão 1.28 — Assistente do RIPD e Termos de Uso
 
@@ -313,21 +313,21 @@ Montar o **Inventário de Tratamento (ROPA)** do zero costuma intimidar quem nã
 - **Liga seus formulários** — para atividades que vêm de formulários do site, dá para **vincular o formulário** ali mesmo, já deixando a retenção automática configurada.
 - **Cuida de crianças e adolescentes** — se a sua organização atende menores de 18, o assistente marca os titulares corretamente, ajuda no **consentimento parental** e recomenda fazer um **RIPD** para esses tratamentos.
 
-> Em **Inventário (ROPA)**, botão **✨ Assistente de Inventário**. O assistente **ajuda** a montar o inventário; ele **não** substitui a análise da sua organização. Veja [Inventário (ROPA)](/modulos/inventario-ropa/#assistente-de-inventario).
+> Em **Inventário (ROPA)**, botão **✨ Assistente de Inventário**. O assistente **ajuda** a montar o inventário; ele **não** substitui a análise da sua organização. Veja [Inventário (ROPA)](/modulos/inventario-ropa/#assistente-de-inventário).
 
 ## Versões 1.22 e 1.23 — Mude o V3RLGPD de site e decida o que fica ao desinstalar
 
 - **Migração entre sites** — **exporte** os dados que você escolher (configurações, políticas, ROPA, consentimentos e mais) em um arquivo **JSON** e **importe** em outra instalação do V3RLGPD. Você marca só os escopos que quer; exportar **não apaga nada**, e a importação **substitui** os escopos escolhidos no destino (com confirmação antes de sobrescrever). Em Configurações → Saída de Dados.
 - **O que acontece ao desinstalar** — agora você decide: **manter os dados** (padrão — se reinstalar, tudo continua lá) ou **apagar tudo definitivamente** ao remover o plugin. A opção de apagar pede uma confirmação, porque é irreversível.
 
-> O arquivo de migração contém **dados pessoais em texto** — guarde com cuidado e apague depois de migrar. Veja [Configurações › Saída de Dados](/modulos/configuracoes/#saida-de-dados).
+> O arquivo de migração contém **dados pessoais em texto** — guarde com cuidado e apague depois de migrar. Veja [Configurações › Saída de Dados](/modulos/configuracoes/#saída-de-dados).
 
 ## Versões 1.20 e 1.21 — A cara da sua Central, do seu jeito
 
 - **Temas de aparência** — escolha entre cinco temas de cores prontos (V3RLGPD, Neutro Escuro, Terra, Oceano e Alto Contraste) para a Central, o selo e os shortcodes combinarem com o seu site — **sem mexer no painel administrativo**. Em Configurações → Aparência.
 - **Personalização avançada** — quer ir além? Ajuste **cor a cor**, os **cantos** e a **fonte**, com **preview ao vivo** e um **aviso de contraste** que sinaliza quando uma combinação fica difícil de ler.
 
-> Veja [Configurações › Aparência](/modulos/configuracoes/#aparencia).
+> Veja [Configurações › Aparência](/modulos/configuracoes/#aparência).
 
 ## Versão 1.19 — Painel mais limpo, com menu nativo do WordPress
 
@@ -337,7 +337,7 @@ Montar o **Inventário de Tratamento (ROPA)** do zero costuma intimidar quem nã
 ## Versão 1.18 — Mostre sua conformidade com o Selo
 
 - **Selo de Conformidade LGPD** — um novo componente público que permite à sua organização **exibir o nível de conformidade no próprio site**, em **três formatos** à escolha (fita, medalha ou cartão). Use o shortcode `[v3rlgpd_selo]` na página que quiser. A partir da 1.18.1, o selo ganhou um visual refinado (medalhão metálico) e o texto "Compromisso LGPD".
-- **A aparência do selo acompanha o tema** — as cores, os cantos e a fonte do selo seguem o tema escolhido em [Configurações › Aparência](/modulos/configuracoes/#aparencia), para combinar com a identidade do seu site.
+- **A aparência do selo acompanha o tema** — as cores, os cantos e a fonte do selo seguem o tema escolhido em [Configurações › Aparência](/modulos/configuracoes/#aparência), para combinar com a identidade do seu site.
 - **Índice de Conformidade mais consistente** — Painel, Mapa de Conformidade e Primeiros Passos passaram a calcular o Índice a partir de **uma única fonte**, garantindo o mesmo número em toda a ferramenta.
 
 > O selo informa o nível de conformidade autodeclarado/verificado pela ferramenta; ele **ajuda a comunicar seu compromisso**, mas **não atesta validade jurídica** nem isenta a organização de responsabilidade.
@@ -357,16 +357,16 @@ Chegou o apoio ao **ECA Digital** (Lei 15.211/2025), a lei que protege crianças
 
 ## Versão 1.7 — Tamanho da imagem das políticas
 
-- **Imagem em pequeno, médio, grande ou extra grande** — agora dá para ajustar o tamanho da imagem/ícone das políticas externas no card da Central. Defina um padrão em Configurações → Páginas & Integração ou ajuste caso a caso pelo atributo `tamanho` do shortcode (ex.: `[v3rlgpd_politica id="3" tamanho="extra-grande"]`). O padrão (pequeno) mantém o visual atual. Veja [as opções de exibição](/modulos/central-privacidade/#opcoes-de-exibicao-das-politicas).
+- **Imagem em pequeno, médio, grande ou extra grande** — agora dá para ajustar o tamanho da imagem/ícone das políticas externas no card da Central. Defina um padrão em Configurações → Páginas & Integração ou ajuste caso a caso pelo atributo `tamanho` do shortcode (ex.: `[v3rlgpd_politica id="3" tamanho="extra-grande"]`). O padrão (pequeno) mantém o visual atual. Veja [as opções de exibição](/modulos/central-privacidade/#opções-de-exibição-das-políticas).
 
 ## Versão 1.6 — Excluir políticas (com cuidado)
 
-- **Excluir política** — além de **inativar** (que só tira do site e é reversível), agora dá para **excluir** uma política de vez. O comportamento segue o **Modo de Exclusão** configurado em Configurações → Identidade: *arquivar* (mantém o registro para auditoria, mas some do painel) ou *excluir em definitivo* (apaga também o histórico de versões — **perde-se a rastreabilidade** de qual texto esteve no ar e quando). Antes de excluir, o sistema mostra um aviso claro e recomenda usar **Inativar** quando o objetivo é apenas tirar do site. Os **consentimentos já coletados nunca são apagados**, em nenhuma modalidade. Veja [Políticas › Excluir](/modulos/politicas/#excluir-uma-politica).
+- **Excluir política** — além de **inativar** (que só tira do site e é reversível), agora dá para **excluir** uma política de vez. O comportamento segue o **Modo de Exclusão** configurado em Configurações → Identidade: *arquivar* (mantém o registro para auditoria, mas some do painel) ou *excluir em definitivo* (apaga também o histórico de versões — **perde-se a rastreabilidade** de qual texto esteve no ar e quando). Antes de excluir, o sistema mostra um aviso claro e recomenda usar **Inativar** quando o objetivo é apenas tirar do site. Os **consentimentos já coletados nunca são apagados**, em nenhuma modalidade. Veja [Políticas › Excluir](/modulos/politicas/#excluir-uma-política).
 - **Correção visual (1.6.1)** — políticas externas (por link) deixaram de exibir, na lista, os avisos de "versões publicadas / nenhuma versão ativa" (que só fazem sentido para políticas internas) — evitando a impressão de que estariam incompletas.
 
 ## Versão 1.5 — Ative e desative políticas sem apagar nada
 
-- **Inativar e reativar política** — depois de publicada, uma política pode ser **inativada** quando foi incorporada a outra, substituída ou deixou de valer. A política inativa **some da Central e dos shortcodes**, mas nada é apagado: conteúdo, histórico de versões e consentimentos ficam preservados, e você pode **reativar** quando quiser. Na lista, as inativas mostram um selo **"INATIVA"**. Vale para políticas internas e externas. Se a política inativada for a de Privacidade, o Índice de Conformidade avisa — reative-a para o indicador voltar. Veja [Políticas](/modulos/politicas/#inativar-e-reativar-uma-politica).
+- **Inativar e reativar política** — depois de publicada, uma política pode ser **inativada** quando foi incorporada a outra, substituída ou deixou de valer. A política inativa **some da Central e dos shortcodes**, mas nada é apagado: conteúdo, histórico de versões e consentimentos ficam preservados, e você pode **reativar** quando quiser. Na lista, as inativas mostram um selo **"INATIVA"**. Vale para políticas internas e externas. Se a política inativada for a de Privacidade, o Índice de Conformidade avisa — reative-a para o indicador voltar. Veja [Políticas](/modulos/politicas/#inativar-e-reativar-uma-política).
 
 ## Versão 1.4 — Políticas externas e exibição sob medida
 

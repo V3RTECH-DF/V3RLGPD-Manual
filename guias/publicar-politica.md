@@ -57,7 +57,7 @@ Se a sua organização **já tem a política publicada** em outro lugar (um PDF,
 
 > ⚠️ **Mantenha a versão em dia.** Como o texto da política externa mora fora do plugin, é a sua organização que precisa **atualizar o número da versão** sempre que publicar uma nova.
 
-A política externa aparece na Central como um **card** com botão "Ler a política completa" e **não** usa o versionamento automático do plugin.
+A política externa aparece na Central como um **card** com botão "Abrir o documento" e **não** usa o versionamento automático do plugin.
 
 ## Ativar a versão
 
@@ -80,9 +80,9 @@ Quando uma política é **incorporada a outra**, **substituída** ou **deixa de 
 2. A política some da Central e dos shortcodes; na lista ela passa a exibir o selo **"INATIVA"**.
 3. Para trazer de volta, clique em **Reativar** (uma política interna precisa ter uma versão ativa para ser reativada).
 
-> ✅ Inativar é **reversível** e preserva versões e consentimentos — diferente de **excluir**. Detalhes em [Políticas › Inativar e reativar](/modulos/politicas/#inativar-e-reativar-uma-politica).
+> ✅ Inativar é **reversível** e preserva versões e consentimentos — diferente de **excluir**. Detalhes em [Políticas › Inativar e reativar](/modulos/politicas/#inativar-e-reativar-uma-política).
 
-Se a política realmente não deve mais existir, há o botão **Excluir** — que pode apenas arquivar ou apagar em definitivo, conforme o Modo de Exclusão. Como a exclusão definitiva **apaga o histórico e a rastreabilidade**, prefira **Inativar** quando estiver em dúvida. Veja [Políticas › Excluir](/modulos/politicas/#excluir-uma-politica).
+Se a política realmente não deve mais existir, há o botão **Excluir** — que pode apenas arquivar ou apagar em definitivo, conforme o Modo de Exclusão. Como a exclusão definitiva **apaga o histórico e a rastreabilidade**, prefira **Inativar** quando estiver em dúvida. Veja [Políticas › Excluir](/modulos/politicas/#excluir-uma-política).
 
 > ⚠️ **Atenção**
 >

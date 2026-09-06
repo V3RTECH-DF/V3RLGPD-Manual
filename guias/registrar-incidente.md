@@ -40,4 +40,4 @@ Aconteceu um vazamento, acesso indevido ou envio errado? Registre o quanto antes
 
 ## Antes de precisar
 
-Tenha um plano simples definido **antes**: quem decide, quem comunica, em quanto tempo. Veja a [etapa 8 do passo a passo](/passo-a-passo-conformidade/#etapa-8--tenha-um-plano-de-incidentes).
+Tenha um plano simples definido **antes**: quem decide, quem comunica, em quanto tempo. Veja a [etapa 8 do passo a passo](/passo-a-passo-conformidade/#etapa-8-tenha-um-plano-de-incidentes).

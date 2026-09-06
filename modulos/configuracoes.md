@@ -47,7 +47,7 @@ A pergunta **"A organização trata dados pessoais fora deste site?"** (Não / S
 - **Não — apenas neste site:** habilita a **resposta automática assistida** do Encarregado nos pedidos informativos (acesso, portabilidade, informação sobre compartilhamento).
 - **Sim** ou **Não informado:** sem resposta automática — o plugin pede que o Encarregado revise (pode haver dados no papel, em planilhas ou em outros sistemas) antes de responder manualmente.
 
-➡️ Como isso afeta o atendimento em **[Atendimentos (DSAR)](/modulos/atendimentos/#a-declaracao-de-escopo-da-organizacao)**.
+➡️ Como isso afeta o atendimento em **[Atendimentos (DSAR)](/modulos/atendimentos/#a-declaração-de-escopo-da-organização)**.
 
 ## Encarregado
 
@@ -67,7 +67,7 @@ Aqui você cadastra o **Encarregado** — nome/setor, e-mail e telefone, que apa
 
 ➡️ Passo a passo em **[Configurar o Encarregado](/guias/configurar-dpo/)**.
 
-> ✅ **Inativar ≠ excluir.** Para tirar uma política do ar **sem apagá-la**, use **Inativar** na lista de Políticas (reversível). O *Modo de Exclusão* acima rege o botão **Excluir** da lista: *soft* arquiva (preserva o registro) e *hard* apaga em definitivo (perde a rastreabilidade). Veja [Políticas › Excluir](/modulos/politicas/#excluir-uma-politica).
+> ✅ **Inativar ≠ excluir.** Para tirar uma política do ar **sem apagá-la**, use **Inativar** na lista de Políticas (reversível). O *Modo de Exclusão* acima rege o botão **Excluir** da lista: *soft* arquiva (preserva o registro) e *hard* apaga em definitivo (perde a rastreabilidade). Veja [Políticas › Excluir](/modulos/politicas/#excluir-uma-política).
 
 ## Banner de Cookies
 
@@ -105,7 +105,7 @@ Esta aba tem três blocos:
 [![Configurações — Aparência (temas)](/assets/screenshots/v3rlgpd-08f-settings-aparencia.png)](/assets/screenshots/v3rlgpd-08f-settings-aparencia.png)
 *Escolha um tema pronto e confira no preview ao vivo. Não afeta o painel administrativo.*
 
-A aba **Aparência** ajusta o visual das partes **públicas** do plugin — a Central de Privacidade, o selo e os shortcodes — para combinar com a identidade do seu site. **Não muda o painel administrativo.**
+A aba **Aparência** ajusta o visual das partes **públicas** do plugin — a Central de Privacidade, o selo e os shortcodes — para combinar com a identidade do seu site. **Não muda o painel administrativo**, com uma exceção: caixas de marcação e botões de opção marcados usam a mesma cor definida aqui tanto no painel quanto nas partes públicas, para não sair um controle azul (o padrão do WordPress) ao lado de botões na cor da sua marca.
 
 **Temas prontos.** Escolha um dos cinco temas e clique em **Salvar Aparência**: **V3RLGPD (Padrão)**, **Neutro Escuro**, **Terra (Marrom)**, **Oceano (Azul Claro)** ou **Alto Contraste**. O **preview ao vivo** mostra como ficam um card, um botão e o selo antes de salvar. Para voltar ao tema original a qualquer momento, clique em **Restaurar padrão**.
 

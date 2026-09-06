@@ -16,23 +16,23 @@ Um panorama do que já foi entregue e das direções em estudo para as próximas
 | Primeiros Passos guiados (onboarding) | 1.2 | [Primeiros Passos](/primeiros-passos/) |
 | Banner de cookies opcional | 1.2 | [Consentimento & Cookies](/modulos/consentimento/) |
 | Central personalizável + shortcodes por elemento | 1.3 | [Central de Privacidade](/modulos/central-privacidade/) |
-| Políticas externas (por link) | 1.4 | [Políticas](/modulos/politicas/#politica-interna-ou-externa-link) |
-| Opções de exibição + seletor da Central | 1.4 | [Central de Privacidade](/modulos/central-privacidade/#opcoes-de-exibicao-das-politicas) |
+| Políticas externas (por link) | 1.4 | [Políticas](/modulos/politicas/#política-interna-ou-externa-link) |
+| Opções de exibição + seletor da Central | 1.4 | [Central de Privacidade](/modulos/central-privacidade/#opções-de-exibição-das-políticas) |
 | Avisos do painel padronizados (notificações + confirmação) | 1.4.1 | — |
-| Inativar / reativar política | 1.5 | [Políticas](/modulos/politicas/#inativar-e-reativar-uma-politica) |
-| Excluir política (arquivar ou definitivo) | 1.6 | [Políticas](/modulos/politicas/#excluir-uma-politica) |
-| Tamanho da imagem das políticas (pequeno a extra grande) | 1.7 | [Central](/modulos/central-privacidade/#opcoes-de-exibicao-das-politicas) |
+| Inativar / reativar política | 1.5 | [Políticas](/modulos/politicas/#inativar-e-reativar-uma-política) |
+| Excluir política (arquivar ou definitivo) | 1.6 | [Políticas](/modulos/politicas/#excluir-uma-política) |
+| Tamanho da imagem das políticas (pequeno a extra grande) | 1.7 | [Central](/modulos/central-privacidade/#opções-de-exibição-das-políticas) |
 | Vínculo didático com a Lei + Mapa de Conformidade | 1.8–1.10 | [Mapa](/modulos/painel/) |
 | **Conformidade com o ECA Digital** (Lei 15.211/2025) | 1.11–1.13 | [ECA Digital](/eca-digital/) |
 | **Módulo RIPD** (Relatório de Impacto) | 1.14–1.16 | [RIPD](/modulos/ripd/) |
 | **Canal de denúncia** (ECA Digital) | 1.17 | [Denúncias](/modulos/denuncias/) |
 | **Selo de Conformidade LGPD** (shortcode, 3 formatos) | 1.18 | — |
 | Navegação do painel por submenus nativos | 1.19 | — |
-| **Aparência** (temas + personalização do frontend) | 1.20–1.21 | [Configurações › Aparência](/modulos/configuracoes/#aparencia) |
-| **Migração entre sites** (exportar/importar) + preferência de desinstalação | 1.22–1.23 | [Configurações › Saída de Dados](/modulos/configuracoes/#saida-de-dados) |
-| **Assistente de Inventário** (diagnóstico guiado que autopreenche o ROPA) | 1.24–1.26 | [Inventário (ROPA)](/modulos/inventario-ropa/#assistente-de-inventario) |
+| **Aparência** (temas + personalização do frontend) | 1.20–1.21 | [Configurações › Aparência](/modulos/configuracoes/#aparência) |
+| **Migração entre sites** (exportar/importar) + preferência de desinstalação | 1.22–1.23 | [Configurações › Saída de Dados](/modulos/configuracoes/#saída-de-dados) |
+| **Assistente de Inventário** (diagnóstico guiado que autopreenche o ROPA) | 1.24–1.26 | [Inventário (ROPA)](/modulos/inventario-ropa/#assistente-de-inventário) |
 | **Assistente do RIPD** (triagem de necessidade + matriz de risco pré-preenchida) | 1.28 | [Fazer um RIPD com o Assistente](/guias/fazer-ripd-assistente/) |
-| **Assistente de Políticas** (privacidade e termos guiados, a partir dos seus dados) | 1.29 | [Políticas › O Assistente](/modulos/politicas/#o-assistente-de-politicas) |
+| **Assistente de Políticas** (privacidade e termos guiados, a partir dos seus dados) | 1.29 | [Políticas › O Assistente](/modulos/politicas/#o-assistente-de-políticas) |
 | **Ações do Encarregado** (registro de iniciativas do encarregado + relatório de accountability) | 1.30 | [Ações do Encarregado](/modulos/acoes-dpo/) |
 | **Anexos na resposta ao titular** (DSAR) | 1.31 | [Atendimentos (DSAR)](/modulos/atendimentos/) |
 | **Atendimento ao titular sempre revisado pelo Encarregado** + declaração de escopo, painel do ROPA e **resposta automática assistida** | 1.32–1.33 | [Atendimentos (DSAR)](/modulos/atendimentos/) |

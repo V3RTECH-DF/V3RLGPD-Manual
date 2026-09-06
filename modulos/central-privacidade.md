@@ -5,7 +5,7 @@ parent: "Módulos"
 permalink: /modulos/central-privacidade/
 role: titular
 routes: ["/central-de-privacidade/"]
-screenshots: [v3rlgpd-22-dsar-form, v3rlgpd-72-central-encarregado, v3rlgpd-08d-settings-paginas, v3rlgpd-100-central-resumo-fechado-desktop, v3rlgpd-100-central-resumo-fechado-mobile, v3rlgpd-101-central-resumo-aberto-desktop, v3rlgpd-101-central-resumo-aberto-mobile]
+screenshots: [v3rlgpd-22-dsar-form, v3rlgpd-72-central-encarregado, v3rlgpd-08d-settings-paginas, v3rlgpd-100-central-resumo-fechado-desktop, v3rlgpd-100-central-resumo-fechado-mobile, v3rlgpd-101-central-resumo-aberto-desktop, v3rlgpd-101-central-resumo-aberto-mobile, v3rlgpd-102-central-documento-externo, v3rlgpd-103-cookies-escolha-vigente, v3rlgpd-104-cookies-sem-escolha]
 last_verified: 2026-09-05
 status: publicado
 ---
@@ -21,7 +21,7 @@ A **Central de Privacidade** é a página **pública** do seu site onde o titula
 
 - **Exercício de Direitos** — um formulário para abrir pedidos (acesso, correção, exclusão, portabilidade, revogação, informação sobre compartilhamento, outro).
 - **Identidade de Privacidade** — nome/setor, e-mail e telefone do Encarregado, para contato direto.
-- **Política de Privacidade** — a **versão ativa**, com o **nome que a sua organização cadastrou** para o documento (se você chamou o documento de "Política de Proteção de Dados Pessoais", é esse nome que aparece — não mais um rótulo fixo). Só políticas ativas aparecem — uma política [inativada](/modulos/politicas/#inativar-e-reativar-uma-politica) some da Central automaticamente.
+- **Política de Privacidade** — a **versão ativa**, com o **nome que a sua organização cadastrou** para o documento (se você chamou o documento de "Política de Proteção de Dados Pessoais", é esse nome que aparece — não mais um rótulo fixo). Só políticas ativas aparecem — uma política [inativada](/modulos/politicas/#inativar-e-reativar-uma-política) some da Central automaticamente.
 
 [![Contato do Encarregado na Central pública](/assets/screenshots/v3rlgpd-72-central-encarregado.png)](/assets/screenshots/v3rlgpd-72-central-encarregado.png)
 *O bloco de contato traz o **Encarregado** (com a sigla "DPO" só como equivalência na 1ª menção). Esses são os dados cadastrados em [Configurações → Encarregado](/modulos/configuracoes/#encarregado).*
@@ -78,7 +78,7 @@ Você controla **como** as políticas aparecem (na Central e nos shortcodes `[v3
 |---|---|---|
 | `modo` | `integral` / `resumo` / `titulo` | Texto completo, só o resumo (padrão) ou só o título. Não afeta políticas externas (que sempre aparecem como card). |
 | `titulo` | `sim` / `nao` | Mostra ou oculta o título. |
-| `link` | `sim` / `nao` | Mostra ou oculta o botão "Ler a política completa" (só políticas externas). |
+| `link` | `sim` / `nao` | Mostra ou oculta o botão "Abrir o documento" (só políticas externas). |
 | `imagem` | `sim` / `nao` | Mostra ou oculta a imagem/ícone. |
 | `tamanho` | `pequeno` / `medio` / `grande` / `extra-grande` | Tamanho da imagem/ícone no card da política externa (padrão `pequeno`). |
 
@@ -108,7 +108,7 @@ Um documento **interno** (redigido no editor do plugin, diferente do externo por
 >
 > Antes, a listagem despejava o **texto completo de cada documento interno** direto na página — numa organização com vários documentos (estatuto, regimento, relatórios, política, termos), a página crescia sem limite, e não dava para saber quem realmente lia cada um. Agora só o resumo aparece de cara, e abrir é uma ação que o plugin consegue contar.
 >
-> Esse clique passa a valer para o card **Aberturas de documentos** do [Painel](/modulos/painel/#indicadores-de-atendimentos-dsar) — o **mesmo** mecanismo que já contava a política externa pelo botão "Ler a política completa". Antes desta versão, só o documento externo contava; agora os dois contam da mesma forma.
+> Esse clique passa a valer para o card **Aberturas de documentos** do [Painel](/modulos/painel/#indicadores-de-atendimentos-dsar) — o **mesmo** mecanismo que já contava a política externa pelo botão "Abrir o documento". Antes desta versão, só o documento externo contava; agora os dois contam da mesma forma.
 >
 > O comando funciona **sem JavaScript** e é operável por teclado e por leitor de tela — o texto já está na página, o script só registra que alguém abriu.
 
@@ -118,7 +118,7 @@ Um documento **interno** (redigido no editor do plugin, diferente do externo por
 
 ## Filtrar quais documentos a listagem mostra
 
-O shortcode `[v3rlgpd_politicas]` aceita quatro atributos de filtro, combináveis entre si. Sem nenhum atributo, ele mostra todos os documentos ativos — o comportamento de sempre.
+O shortcode `[v3rlgpd_politicas]` aceita cinco atributos de filtro e ordenação, combináveis entre si. Sem nenhum atributo, ele mostra todos os documentos ativos em ordem alfabética — o comportamento de sempre.
 
 | Atributo | Exemplo | O que faz |
 |---|---|---|
@@ -126,10 +126,28 @@ O shortcode `[v3rlgpd_politicas]` aceita quatro atributos de filtro, combinávei
 | `ids` | `ids="4,1,3"` | Mostra só os documentos informados, **na ordem** em que você os listou |
 | `excluir` | `excluir="15,16"` | Mostra tudo, menos os documentos informados |
 | `limite` | `limite="5"` | Corta a lista nos primeiros N documentos |
+| `ordem` | `alfabetica` (padrão), `alfabetica-invertida`, `recentes`, `antigos` | Define a ordem de exibição — veja abaixo |
 
 > 💡 **Dois usos reais**
 >
 > Uma Central de Privacidade que mostra só o que é de privacidade e cookies, e se atualiza sozinha quando você publica um documento novo desse tipo — sem precisar editar a página. E uma página de Transparência, sem nenhum filtro, mostrando tudo (inclusive estatuto, regimento e relatórios).
+
+### `ordem` — para documentos com ano no título, alfabética costuma sair ao contrário
+
+Ordem alfabética é razoável para políticas, mas é a pior escolha para uma lista de **relatórios anuais**: *Relatório de Atividades — 2018* aparece antes de *2025*, e numa página de transparência é justamente o exercício mais recente que o visitante procura primeiro.
+
+```
+[v3rlgpd_politicas tipo="relatorio" ordem="alfabetica-invertida"]
+```
+
+[![Card de um relatório externo com o botão Abrir o documento](/assets/screenshots/v3rlgpd-102-central-documento-externo.png)](/assets/screenshots/v3rlgpd-102-central-documento-externo.png)
+*Documento externo (por link): card com resumo, versão e o botão "Abrir o documento".*
+
+> ⚠️ **`recentes` e `antigos` usam a data de cadastro, não a de alteração**
+>
+> Corrigir um erro de digitação num relatório de 2018 não pode fazer ele pular para o topo de uma página de transparência — a data que conta é quando o documento foi **cadastrado**, não a última vez que alguém mexeu nele. Para documentos que já trazem o ano no título (como relatórios anuais), `alfabetica-invertida` costuma dar um resultado mais previsível do que `recentes`, porque não depende de quando cada um foi digitado no sistema.
+>
+> Quando você usa `ids`, a ordem da lista que você informou **sempre vence** — `ordem` não se aplica nesse caso.
 
 > ⚠️ **A Central de Privacidade passou a filtrar por padrão**
 >

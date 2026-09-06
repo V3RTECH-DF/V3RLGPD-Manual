@@ -76,11 +76,11 @@ Para a política **externa**, você informa: a **URL** do documento, um **resumo
 [![Editor de política externa](/assets/screenshots/v3rlgpd-03b-policy-externa.png)](/assets/screenshots/v3rlgpd-03b-policy-externa.png)
 *Política externa: URL, resumo, versão manual e a escolha de imagem ou ícone pré-definido.*
 
-Na Central, a política externa aparece como um **card** com a imagem/ícone, o título, o resumo e um botão **"Ler a política completa"** que abre o documento em uma nova aba.
+Na Central, a política externa aparece como um **card** com a imagem/ícone, o título, o resumo e um botão **"Abrir o documento"** que abre o documento em uma nova aba.
 
 > 💡 **Resumo também nas internas**
 >
-> As políticas **internas** também têm um campo de **resumo** (opcional). Ele é usado quando você exibe as políticas no modo "resumo" (veja as [opções de exibição](/modulos/central-privacidade/#opcoes-de-exibicao-das-politicas)) — nesse modo, o resumo vem com um comando **"Ler na íntegra"** que abre o texto completo na mesma página (veja [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-integra-abre-o-documento-sem-sair-da-pagina)). Se você deixar o resumo em branco, o plugin gera um trecho automático a partir do texto.
+> As políticas **internas** também têm um campo de **resumo** (opcional). Ele é usado quando você exibe as políticas no modo "resumo" (veja as [opções de exibição](/modulos/central-privacidade/#opções-de-exibição-das-políticas)) — nesse modo, o resumo vem com um comando **"Ler na íntegra"** que abre o texto completo na mesma página (veja [Central de Privacidade](/modulos/central-privacidade/#no-modo-resumo-ler-na-íntegra-abre-o-documento-sem-sair-da-página)). Se você deixar o resumo em branco, o plugin gera um trecho automático a partir do texto.
 
 ## Versionamento e aceite
 
@@ -150,7 +150,7 @@ Além de a política aparecer na [Central de Privacidade](/modulos/central-priva
 
 Ele exibe o conteúdo da **versão ativa** daquela política (ou o **card** com o link, se a política for externa). Na **lista de Políticas**, cada política mostra o seu **ID** (e um atalho para copiar o shortcode pronto) — é o número que você coloca em `id="..."`.
 
-Você ainda pode controlar **como** a política aparece com atributos (`modo`, `titulo`, `link`, `imagem`) — por exemplo `[v3rlgpd_politica id="1" modo="resumo"]`. Veja a tabela completa em [Opções de exibição das políticas](/modulos/central-privacidade/#opcoes-de-exibicao-das-politicas).
+Você ainda pode controlar **como** a política aparece com atributos (`modo`, `titulo`, `link`, `imagem`) — por exemplo `[v3rlgpd_politica id="1" modo="resumo"]`. Veja a tabela completa em [Opções de exibição das políticas](/modulos/central-privacidade/#opções-de-exibição-das-políticas).
 
 > 💡 **Quando usar**
 >

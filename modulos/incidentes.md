@@ -63,7 +63,7 @@ A LGPD (**art. 48**) determina que o controlador comunique à **ANPD** e aos **t
 
 > 💡 **Por que isso importa**
 >
-> Quem tem um plano combinado responde em horas, não em dias — e isso reduz o dano e demonstra responsabilidade. Defina desde já **quem decide, quem comunica e em quanto tempo**. Veja também a etapa 8 do [passo a passo da conformidade](/passo-a-passo-conformidade/#etapa-8--tenha-um-plano-de-incidentes).
+> Quem tem um plano combinado responde em horas, não em dias — e isso reduz o dano e demonstra responsabilidade. Defina desde já **quem decide, quem comunica e em quanto tempo**. Veja também a etapa 8 do [passo a passo da conformidade](/passo-a-passo-conformidade/#etapa-8-tenha-um-plano-de-incidentes).
 
 ## Como registrar no plugin
 

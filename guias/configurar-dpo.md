@@ -51,4 +51,4 @@ Nesta mesma aba há o **Modo de Exclusão de Políticas**, que define o que o bo
 >
 > O *Hard Delete* apaga a política definitivamente — você **perde a rastreabilidade** de qual texto esteve no ar. Mantenha em *Soft Delete* salvo se tiver um motivo claro para apagar de vez. (Os consentimentos já coletados são preservados nos dois modos.)
 
-> ✅ **Quer só tirar do ar, não apagar?** Não use a exclusão — use **[Inativar](/modulos/politicas/#inativar-e-reativar-uma-politica)** na lista de Políticas. Inativar é reversível e preserva tudo; excluir (acima) é outra coisa.
+> ✅ **Quer só tirar do ar, não apagar?** Não use a exclusão — use **[Inativar](/modulos/politicas/#inativar-e-reativar-uma-política)** na lista de Políticas. Inativar é reversível e preserva tudo; excluir (acima) é outra coisa.

@@ -91,6 +91,10 @@ Não é um erro nem uma permissão negada pelo plugin — é a configuração mo
 [![Políticas na página de gestão](/assets/screenshots/v3rlgpd-83-gestao-politicas.png)](/assets/screenshots/v3rlgpd-83-gestao-politicas.png)
 *Políticas, com o Assistente e a Galeria de Modelos disponíveis, igual ao painel.*
 
+> 💡 **Caixas de marcação e botões de opção na cor da marca**
+>
+> Marcados, esses controles aparecem na cor definida em **Configurações → Aparência**, não no azul padrão do WordPress — tanto aqui na página de gestão quanto no painel administrativo. É mudança só de aparência; nada no comportamento muda.
+
 ## No celular
 
 A página de gestão funciona em tela estreita: as abas se reorganizam para caber na largura da tela, e o conteúdo se ajusta junto.
