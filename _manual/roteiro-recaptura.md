@@ -123,3 +123,23 @@ Prioridade máxima dentro deste lote: `01-dashboard`, `68-admin-menu-completo`, 
 **Não afetados — páginas públicas, sem chrome do wp-admin** (Central de Privacidade, banner de cookies, formulário de direitos, ROPA público, formulário de menores): `100-central-resumo-fechado-desktop`, `101-central-resumo-aberto-desktop`, `102-central-documento-externo`, `103-cookies-escolha-vigente`, `104-cookies-sem-escolha`, `21-cookie-banner`, `22-dsar-form`, `30-ciencia-toggle`, `31-ciencia-banner`, `32-ciencia-relatorio`, `53-ropa-publico-grid`, `55-formulario-menores`, `72-central-encarregado`. Não recapturar por causa desta mudança — só se algo mais os tiver alterado.
 
 Sem captura nesta rodada (dispensada). Front-matter das páginas afetadas **não foi tocada** (`last_verified` mantido) — os prints continuam os mesmos arquivos, só desatualizados; atualizar `last_verified` só depois da recaptura de fato.
+
+## Possível recaptura — gestão no site ancorada (#93, #99, ainda não lançada — 2026-09-07)
+
+O bundle da gestão no site (#70) passou a ancorar o próprio CSS (ADR-050 em `ARCHITECTURE.md`), corrigindo um vazamento em que o fundo dos controles de um bloco público (Central de Privacidade, formulário de solicitação, listagem de documentos) sumia quando a página também trazia a gestão embutida. Mudança de comportamento interno, sem alteração de layout na gestão isolada — os prints `80-gestao-*` a `84-gestao-*` não deveriam ter mudado.
+
+Vale conferir, se algum print existente mostrar a combinação gestão + bloco público na mesma página, se ele capturava o defeito (fundo apagado do bloco público) — nesse caso, recapturar. Não identificado nenhum print assim no roteiro atual; anotado aqui para o caso de existir um fora deste arquivo.
+
+## Lote de recaptura — Shortcodes vira aba de Configurações (#102, ainda não lançada — 2026-09-07)
+
+A navegação de primeiro nível vai de **oito itens para sete**: Shortcodes deixa de ser item próprio e passa a ser **aba dentro de Configurações**, entre Acessos e Licença. Atendente e Auditor deixam de enxergar essa aba (herda a guarda `settings.view`).
+
+**Afetados:**
+- `v3rlgpd-68-admin-menu-completo` — mostra a barra de navegação com os itens de primeiro nível; hoje mostra oito, precisa mostrar sete.
+- Todo o bloco `08-settings-*` (`08-settings-dpo` a `08i-settings-import`) — a barra de abas dentro de Configurações ganha uma aba nova (`shortcodes`) entre Acessos e Licença; qualquer print que mostre essa barra de abas por inteiro fica incompleto sem ela.
+- `v3rlgpd-62-auditor-menu` e `v3rlgpd-65-atendente-menu` — se mostrarem a barra de primeiro nível, também caem para sete itens (mas continuam sem chegar em Configurações, então não mudam em relação a Shortcodes especificamente).
+- Página de Gestão no site (`80-gestao-*` a `84-gestao-*`) — **não afetada**: Shortcodes já não aparecia ali (mesma lista de exclusão de sempre, junto com Configurações).
+
+**Novo print a considerar (nunca existiu um específico da tela de Shortcodes isolada no roteiro atual):** a aba Shortcodes dentro de Configurações, mostrando o catálogo — útil para ilustrar onde ela passou a morar.
+
+Não capturado nesta rodada — entra no lote acumulado de recaptura (junto com a navegação em barra única e a gestão no site ancorada, acima), a ser tratado por agente próprio.
