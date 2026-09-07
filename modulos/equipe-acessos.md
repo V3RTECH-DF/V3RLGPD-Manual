@@ -14,9 +14,9 @@ status: publicado
 
 A tela **Equipe / Acessos** permite que o administrador do WordPress defina, para cada usuário do painel, qual papel ele exerce no V3RLGPD — e, com isso, a quais módulos e ações esse usuário tem acesso.
 
-> 🧭 **Onde encontrar (v1.42)**
+> 🧭 **Onde encontrar**
 >
-> A partir da versão 1.42, **Equipe / Acessos** é uma **aba dentro de Configurações** (antes era um item próprio no menu). Vá em **Configurações → aba Equipe / Acessos**. A aba só aparece para o administrador.
+> **Equipe / Acessos** é uma **aba dentro de Configurações**. Na barra de navegação do V3RLGPD, abra **Configurações** e, entre as abas internas da tela, escolha **Equipe / Acessos**. A aba só aparece para o administrador.
 
 > 🆕 **Duas áreas (v1.44)**
 >
@@ -65,7 +65,7 @@ São **três papéis** atribuíveis (mais o administrador do WordPress, que tem 
 [![Tela Equipe / Acessos](/assets/screenshots/v3rlgpd-60-equipe-acessos.png)](/assets/screenshots/v3rlgpd-60-equipe-acessos.png)
 *Tela Equipe / Acessos: lista dos usuários do WordPress com o papel atual de cada um.*
 
-1. No menu lateral, abra **Equipe / Acessos** (visível só para administradores).
+1. Na barra de navegação do V3RLGPD, abra **Configurações → Equipe / Acessos** (visível só para administradores).
 2. A tela mostra os usuários do WordPress. Use o campo de **busca** para encontrar alguém pelo nome ou e-mail (útil em sites com muitos usuários) — ou marque **"Somente com acesso"** para ver só quem já tem papel.
 3. No seletor ao lado do usuário, escolha o papel: **Sem acesso**, **Encarregado**, **Atendente** ou **Auditor**.
 4. A alteração é salva na hora e uma confirmação aparece no canto da tela.
@@ -129,12 +129,14 @@ Só os cargos **personalizados** têm o botão **Excluir**. Se houver pessoas no
 
 ## O que cada papel vê
 
-> 🧭 **Menu agrupado (v1.42):** desde a versão 1.42, os módulos ficam **agrupados em abas** (ver [Módulos](/modulos/)). O que muda por papel é **quais grupos e abas aparecem** — o princípio abaixo continua igual. As capturas dos menus do **Atendente** e do **Auditor** ilustram o arranjo **anterior** a essa mudança e serão refeitas na próxima rodada de capturas.
+> 🧭 **Navegação por barra e abas:** os módulos ficam agrupados numa barra de navegação com abas (ver [Módulos](/modulos/)). O que muda por papel é **quais itens e abas aparecem** — o princípio abaixo continua igual.
+>
+> ⚠️ **Capturas desatualizadas.** As imagens desta seção (menu do administrador, do Atendente e do Auditor) ainda mostram o **menu lateral do WordPress com os 8 itens do V3RLGPD listados um abaixo do outro** — layout anterior à v1.73.0, quando a navegação passou a viver dentro da tela do plugin, numa barra horizontal. O conteúdo e as permissões descritos abaixo continuam corretos; só o retrato do menu está velho. Recaptura pendente — ver `_manual/roteiro-recaptura.md`.
 
 ### Administrador do WordPress
 
 [![Menu completo do administrador](/assets/screenshots/v3rlgpd-68-admin-menu-completo.png)](/assets/screenshots/v3rlgpd-68-admin-menu-completo.png)
-*Menu agrupado (v1.42) com os 8 itens; **Equipe / Acessos** fica dentro de Configurações.*
+*Menu do administrador com os 8 itens — captura anterior à v1.73.0, mostra o antigo menu lateral em vez da barra horizontal atual; **Equipe / Acessos** fica dentro de Configurações.*
 
 Vê e usa todos os módulos do V3RLGPD.
 
@@ -167,6 +169,16 @@ O Auditor tem **acesso de leitura a todos os módulos** (exceto a aba Equipe / A
 *Em Configurações, o Auditor vê um aviso de somente leitura e os botões de salvar ficam desabilitados.*
 
 ---
+
+## O controle de acesso agora vale também para o endereço direto
+
+Desde a v1.73.0, uma tela que a sua conta **não tem permissão para ver** fica realmente inacessível — mesmo que alguém digite o endereço dela diretamente no navegador, ou o tenha salvo num favorito antigo. Quem tenta abre uma mensagem dizendo que não tem acesso, em vez da tela.
+
+> 💡 **Por que isso importa**
+>
+> Antes, o item sumia do menu para quem não tinha o papel correspondente, mas o **endereço direto** ainda abria a tela — a ausência no menu era só uma conveniência visual, não uma barreira de fato. Agora o controle de acesso vale nos dois casos: pelo menu **e** pelo endereço direto, exatamente como já acontecia na [página de Gestão no site](/modulos/gestao-frontend/#quem-enxerga-o-quê).
+
+Se alguém da sua equipe disser que **"uma tela que eu sempre abria parou de abrir"**, o motivo mais provável é este: o papel dela nunca incluiu aquela tela — só não havia sido cobrado até agora. O caminho é revisar as permissões do papel dela em **Configurações → Equipe / Acessos → Papéis & Cargos** (veja ["Personalizar papéis e criar cargos"](#personalizar-papeis-e-criar-cargos-v144) acima).
 
 ## Tabela resumida de permissões
 

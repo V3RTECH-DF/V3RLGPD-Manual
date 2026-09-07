@@ -82,6 +82,10 @@ Nas telas em que uma ação só existe no painel, a experiência muda conforme q
 
 Não é um erro nem uma permissão negada pelo plugin — é a configuração morando no lugar certo. Por exemplo, no Dashboard e no Mapa de Conformidade, a gestão pela página do site mostra as mesmas seções que o painel:
 
+> 🧭 **A mesma barra de navegação do painel (v1.73)**
+>
+> Desde a v1.73.0, esta página usa **a mesma barra de navegação horizontal** que o painel do WordPress adotou — com os itens que fazem sentido aqui (**Configurações** e **Shortcodes** continuam de fora, como já não apareciam antes). Quem alterna entre a página de gestão e o painel encontra o mesmo layout dos dois lados, o que facilita treinar alguém que vai usar as duas portas.
+
 [![Mapa de Conformidade na página de gestão](/assets/screenshots/v3rlgpd-81-gestao-mapa.png)](/assets/screenshots/v3rlgpd-81-gestao-mapa.png)
 *Mapa de Conformidade, Inventário (ROPA) e Políticas funcionam de ponta a ponta pela página — o menu de abas é o mesmo do painel.*
 

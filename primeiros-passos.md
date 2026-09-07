@@ -17,9 +17,13 @@ Esta página leva sua organização do "plugin recém-instalado" ao "pronto para
 
 ## Onde fica o V3RLGPD
 
-Depois de instalado e ativado no seu site WordPress, o plugin aparece no menu lateral do painel administrativo como **V3RLGPD**. Ao abrir, você vê o **Painel de Conformidade e Privacidade**. O menu do plugin tem **8 itens**: **Dashboard**, **Auditoria de Conformidade**, **Inventário (ROPA)**, **Relatório de Impacto (RIPD)**, **Políticas**, **Atendimento ao Titular**, **Configurações** e **Shortcodes**.
+Depois de instalado e ativado no seu site WordPress, o plugin aparece no menu lateral do painel administrativo como **um único item: V3RLGPD**. Ao abrir, você vê o **Painel de Conformidade e Privacidade**, e toda a navegação passa a acontecer **dentro dessa tela**, numa **barra horizontal no alto** — os mesmos **8 itens** de sempre, na mesma ordem: **Painel**, **Auditoria de Conformidade**, **Inventário (ROPA)**, **Relatório de Impacto (RIPD)**, **Políticas**, **Atendimento ao Titular**, **Configurações** e **Shortcodes**.
 
-Alguns desses itens são **grupos com abas** (para deixar o painel mais simples): **Auditoria de Conformidade** reúne *Detector* e *Mapa de Conformidade*; **Inventário (ROPA)** reúne *Inventário* e *Verificador de Formulários*; **Atendimento ao Titular** reúne *Consentimentos, Atendimentos, Denúncias, Incidentes, Retenção* e *Ações do Encarregado*. No topo de cada tela, o **cabeçalho** mostra a logo com o nome da seção ao lado e a versão do plugin.
+Quando você está num item que tem subdivisões — **Auditoria de Conformidade** (*Detector* e *Mapa de Conformidade*), **Inventário (ROPA)** (*Inventário* e *Verificador de Formulários*) ou **Atendimento ao Titular** (*Consentimentos, Atendimentos, Denúncias, Incidentes, Retenção* e *Ações do Encarregado*) — aparece uma **segunda barra** logo abaixo, com as abas daquele item. É o mesmo conteúdo de sempre: muda onde se clica, não o que existe.
+
+> 💡 **Favorito antigo continua funcionando**
+>
+> Se você tinha o endereço de uma tela específica salvo nos favoritos, ou volta a ela pelo histórico do navegador, o V3RLGPD te leva para a tela certa dentro da nova navegação. Não é preciso refazer nenhum favorito.
 
 [![Painel do V3RLGPD](/assets/screenshots/v3rlgpd-01-dashboard.png)](/assets/screenshots/v3rlgpd-01-dashboard.png)
 *O Dashboard é o cockpit da conformidade da sua organização.*

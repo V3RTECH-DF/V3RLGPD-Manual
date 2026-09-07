@@ -8,6 +8,18 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versão 1.73 — O menu do V3RLGPD vira uma tela só, e o controle de acesso passa a valer também pelo endereço direto
+
+O menu do V3RLGPD no WordPress deixa de ter oito entradas soltas e passa a ter **uma só**. Toda a navegação agora vive dentro da própria tela do plugin, numa **barra horizontal no alto**, com os mesmos oito itens de sempre, na mesma ordem: Painel, Auditoria de Conformidade, Inventário (ROPA), Relatório de Impacto (RIPD), Políticas, Atendimento ao Titular, Configurações e Shortcodes.
+
+- **Itens com subdivisões ganham uma segunda barra**, logo abaixo, com as abas daquele item — Auditoria, Inventário e Atendimento ao Titular funcionam assim. É o mesmo conteúdo de antes; muda onde se clica.
+- **Endereço salvo nos favoritos continua funcionando.** Quem tinha o link de uma tela específica, ou volta a ela pelo histórico do navegador, é levado para a tela certa dentro da nova navegação — sem precisar refazer favorito nenhum.
+- **A [página de Gestão publicada no site](/modulos/gestao-frontend/) ganha a mesma barra**, com os itens que fazem sentido ali (Configurações e Shortcodes continuam de fora, como já não apareciam). A logo e as cores continuam sendo as que a organização escolheu em Configurações → Aparência.
+
+> ⚠️ **Uma mudança de comportamento vale a pena explicar.** Tela que a sua conta não tem permissão para ver agora fica **realmente inacessível** — antes, o item sumia do menu, mas o endereço direto ainda abria a tela; agora o controle de acesso vale nos dois casos. Se alguém da equipe notar que "uma tela que eu sempre abria parou de abrir", o motivo é que o papel dela nunca incluiu aquela tela — e agora isso passou a ser respeitado. O ajuste é revisar o papel em **Configurações → Equipe / Acessos**. Veja [Equipe / Acessos › O controle de acesso agora vale também para o endereço direto](/modulos/equipe-acessos/#o-controle-de-acesso-agora-vale-também-para-o-endereço-direto).
+
+Veja em [Módulos › Como a navegação está organizada](/modulos/), [Primeiros Passos › Onde fica o V3RLGPD](/primeiros-passos/#onde-fica-o-v3rlgpd) e [Gestão no site](/modulos/gestao-frontend/).
+
 ## Versão 1.72 — A página de Gestão ganha identidade própria, e o aviso de cookies fica mais flexível e mais protegido
 
 Três mudanças, todas na aparência das telas públicas.

@@ -98,3 +98,19 @@ Exige publicar as páginas públicas do plugin (Central de Privacidade com short
 
 **Baixo valor (polish; recapturar só se sobrar tempo):**
 - `v3rlgpd-dpo-02-form` e demais **modais** — botão "X" de fechar maior (#28). Diferença sutil; só recapturar oportunisticamente.
+
+## Lote de recaptura — navegação em barra única, v1.73.0 (2026-09-07)
+
+> **A maior defasagem de imagem que o manual já teve de uma vez.** O menu do V3RLGPD no WordPress deixou de ter 8 entradas no menu lateral e passou a ter 1 (a navegação virou uma barra horizontal dentro da própria tela do plugin, com segunda barra para os itens com abas). **Praticamente toda captura de tela cheia do wp-admin mostra o menu lateral antigo, o cabeçalho antigo, ou os dois** — e não corresponde mais à tela. Quem for recapturar precisa saber disso antes de começar: não é lote pontual, é a base inteira do wp-admin.
+
+**Afetados — todo print de tela cheia do wp-admin** (menu lateral com as 8 entradas antigas e/ou cabeçalho antigo do plugin, hoje substituídos pela barra horizontal):
+
+`01-dashboard`, `01b-dashboard-selo`, `02-policies`, `03-policy-editor`, `03b-policy-externa`, `04-dsar`, `04b-dsar-declaracao-escopo`, `04c-dsar-detalhe-auto`, `04d-dsar-banner-revisar`, `05-incidents`, `06-ropa`, `08-settings-dpo` a `08i-settings-import` (todo o bloco 08), `09-wizard`, `10-compliance-report`, `11-templates`, `30-feedback`, `30-retencao-fila`, `31-retencao-config`, `32-ropa-retencao`, `33-mapeamento-formularios`, `34-assistente-intro`, `34-verificador-relatorio`, `35-assistente-perguntas`, `37-assistente-conclusao`, `38-ropa-rascunho-formulario`, `39-google-forms`, `40-anpd-news`, `40-onboarding-card`, `41-onboarding-roteiro`, `50-mapa-conformidade`, `54-eca-mapa-triagem`, `60-equipe-acessos`, `61-equipe-toast`, `62-auditor-menu`, `63-auditor-ropa`, `64-auditor-settings`, `65-atendente-menu`, `66-atendente-dsar`, `67-atendente-incidentes`, `68-admin-menu-completo`, `69-config-encarregado`, `70-encarregado-autofill`, `71-acessos-distincao`, `72-papeis-cargos`, `73-editor-matriz`, `74-excluir-migracao`, `75-ropa-transferencia-mecanismo`, `90-detector`, `91-detector-rastreador-origem`, `92-config-licenca`, `95-document-types`, `96-document-types-remove`, `97-dashboard-opens`, `98-ropa-multi-base`, `99-licenca-sem-ativar`, `dpo-01-lista`, `dpo-02-form`, `dpo-03-relatorio`.
+
+Prioridade máxima dentro deste lote: `01-dashboard`, `68-admin-menu-completo`, `62/65-auditor-menu/atendente-menu` (esses três **mostram o menu** explicitamente — são os que mais enganam quem olhar a imagem) e `60-equipe-acessos`/`73-editor-matriz` (referenciados pela nova seção sobre acesso por endereço direto).
+
+**Também afetados — página de Gestão no site** (ganhou a mesma barra de navegação do painel): `80-gestao-dashboard`, `81-gestao-mapa`, `82-gestao-ropa`, `83-gestao-politicas`, `84-gestao-dashboard-mobile`. Este lote já mostrava uma barra de abas própria; confirmar que ficou visualmente igual à do painel antes de aceitar como "sem mudança".
+
+**Não afetados — páginas públicas, sem chrome do wp-admin** (Central de Privacidade, banner de cookies, formulário de direitos, ROPA público, formulário de menores): `100-central-resumo-fechado-desktop`, `101-central-resumo-aberto-desktop`, `102-central-documento-externo`, `103-cookies-escolha-vigente`, `104-cookies-sem-escolha`, `21-cookie-banner`, `22-dsar-form`, `30-ciencia-toggle`, `31-ciencia-banner`, `32-ciencia-relatorio`, `53-ropa-publico-grid`, `55-formulario-menores`, `72-central-encarregado`. Não recapturar por causa desta mudança — só se algo mais os tiver alterado.
+
+Sem captura nesta rodada (dispensada). Front-matter das páginas afetadas **não foi tocada** (`last_verified` mantido) — os prints continuam os mesmos arquivos, só desatualizados; atualizar `last_verified` só depois da recaptura de fato.
