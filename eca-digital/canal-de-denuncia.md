@@ -6,7 +6,7 @@ permalink: /eca-digital/canal-de-denuncia/
 role: encarregado
 routes: ["#/reports", "/e2e-eca-test"]
 screenshots: [den-01, den-02]
-last_verified: 2026-06-25
+last_verified: 2026-09-06
 status: rascunho
 ---
 
@@ -22,6 +22,8 @@ Coloque o shortcode `[v3rlgpd_denuncia]` numa página pública. Ele exibe um for
 <!-- screenshot: den-01 — formulário público de denúncia -->
 
 Como todo bloco do plugin, ele aceita os atributos `titulo`, `descricao`, `nivel` e `classe` para se encaixar no layout da sua página (veja [Controle o layout de cada bloco](/guias/publicar-central-privacidade/#controle-o-layout-de-cada-bloco-título-descrição-nível-e-classe)).
+
+> ✅ O botão de envio deste formulário segue o mesmo tema de **Configurações → Aparência** e mantém fundo e texto legíveis mesmo que o tema do site tente repintar só um dos dois — a mesma correção aplicada ao aviso de cookies (ver [Consentimento & Cookies › Aparência](/modulos/consentimento/#aparência)).
 
 ### O aviso de identificação não é ocultável
 

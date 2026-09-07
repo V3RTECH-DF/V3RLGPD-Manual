@@ -6,7 +6,7 @@ permalink: /modulos/central-privacidade/
 role: titular
 routes: ["/central-de-privacidade/"]
 screenshots: [v3rlgpd-22-dsar-form, v3rlgpd-72-central-encarregado, v3rlgpd-08d-settings-paginas, v3rlgpd-100-central-resumo-fechado-desktop, v3rlgpd-100-central-resumo-fechado-mobile, v3rlgpd-101-central-resumo-aberto-desktop, v3rlgpd-101-central-resumo-aberto-mobile, v3rlgpd-102-central-documento-externo, v3rlgpd-103-cookies-escolha-vigente, v3rlgpd-104-cookies-sem-escolha]
-last_verified: 2026-09-05
+last_verified: 2026-09-06
 status: publicado
 ---
 
@@ -26,6 +26,8 @@ A **Central de Privacidade** é a página **pública** do seu site onde o titula
 [![Contato do Encarregado na Central pública](/assets/screenshots/v3rlgpd-72-central-encarregado.png)](/assets/screenshots/v3rlgpd-72-central-encarregado.png)
 *O bloco de contato traz o **Encarregado** (com a sigla "DPO" só como equivalência na 1ª menção). Esses são os dados cadastrados em [Configurações → Encarregado](/modulos/configuracoes/#encarregado).*
 - **Banner de cookies** — na primeira visita (veja [Consentimento & Cookies](/modulos/consentimento/)).
+
+> ✅ O botão **"Enviar Solicitação"** do formulário de direitos segue o tema de **Configurações → Aparência** e mantém fundo e texto legíveis mesmo se o tema do site tentar repintar só um dos dois — a mesma correção aplicada ao aviso de cookies.
 
 ## Como publicar
 

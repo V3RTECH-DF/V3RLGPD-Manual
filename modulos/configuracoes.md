@@ -6,7 +6,7 @@ permalink: /modulos/configuracoes/
 role: encarregado
 routes: ["#/settings"]
 screenshots: [v3rlgpd-04b-dsar-declaracao-escopo, v3rlgpd-69-config-encarregado, v3rlgpd-70-encarregado-autofill, v3rlgpd-08b-settings-cookies, v3rlgpd-08c-settings-webhooks, v3rlgpd-08d-settings-paginas, v3rlgpd-08f-settings-aparencia, v3rlgpd-08g-settings-aparencia-custom, v3rlgpd-08e-settings-saida, v3rlgpd-08i-settings-import, v3rlgpd-08h-settings-desinstalacao, v3rlgpd-92-config-licenca, v3rlgpd-99-licenca-sem-ativar]
-last_verified: 2026-09-05
+last_verified: 2026-09-06
 status: publicado
 ---
 
@@ -105,9 +105,21 @@ Esta aba tem três blocos:
 [![Configurações — Aparência (temas)](/assets/screenshots/v3rlgpd-08f-settings-aparencia.png)](/assets/screenshots/v3rlgpd-08f-settings-aparencia.png)
 *Escolha um tema pronto e confira no preview ao vivo. Não afeta o painel administrativo.*
 
-A aba **Aparência** ajusta o visual das partes **públicas** do plugin — a Central de Privacidade, o selo e os shortcodes — para combinar com a identidade do seu site. **Não muda o painel administrativo**, com uma exceção: caixas de marcação e botões de opção marcados usam a mesma cor definida aqui tanto no painel quanto nas partes públicas, para não sair um controle azul (o padrão do WordPress) ao lado de botões na cor da sua marca.
+A aba **Aparência** ajusta o visual das partes **públicas** do plugin — a Central de Privacidade, o selo, os shortcodes e a [página de Gestão fora do wp-admin](/modulos/gestao-frontend/) — para combinar com a identidade do seu site. **Não muda o painel administrativo**, com uma exceção: caixas de marcação e botões de opção marcados usam a mesma cor definida aqui tanto no painel quanto nas partes públicas, para não sair um controle azul (o padrão do WordPress) ao lado de botões na cor da sua marca.
+
+> ℹ️ **A página de Gestão também segue o tema.** Antes, a página aberta pelo shortcode `[v3rlgpd_gestao]` sempre usava as cores padrão do produto, mesmo que a organização tivesse um tema configurado aqui. Isso passou a valer sozinho: quem já tem um tema definido não precisa fazer nada, e ele passa a se refletir também na tela de Gestão.
 
 **Temas prontos.** Escolha um dos cinco temas e clique em **Salvar Aparência**: **V3RLGPD (Padrão)**, **Neutro Escuro**, **Terra (Marrom)**, **Oceano (Azul Claro)** ou **Alto Contraste**. O **preview ao vivo** mostra como ficam um card, um botão e o selo antes de salvar. Para voltar ao tema original a qualquer momento, clique em **Restaurar padrão**.
+
+### Logo da página de Gestão
+
+A mesma aba tem uma opção para escolher **qual logo aparece na página de Gestão** (a que roda pelo shortcode `[v3rlgpd_gestao]`, fora do `wp-admin`). Três escolhas:
+
+- **Logo do V3RLGPD** — o ícone do plugin. É o padrão; quem não mexer continua vendo este.
+- **Logo da organização** — a mesma imagem que você já enviou em **Configurações → Organização**. Não existe um upload separado para a Gestão: é a logo de sempre, reaproveitada aqui.
+- **Sem logo** — a página de Gestão fica sem nenhuma marca no topo.
+
+> 💡 **Escolheu "logo da organização" mas ainda não enviou nenhuma?** A tela **não fica com um espaço vazio** — ela mostra a logo do V3RLGPD normalmente, como se a opção padrão estivesse marcada. Assim que você enviar a logo da organização em Configurações → Organização, a página de Gestão passa a exibi-la, sem precisar voltar aqui e escolher de novo.
 
 ### Personalizar (avançado)
 
@@ -116,7 +128,21 @@ A aba **Aparência** ajusta o visual das partes **públicas** do plugin — a Ce
 
 Clique em **Personalizar** para definir individualmente as **cores** (principal, texto, títulos, fundos, bordas…), os **cantos** (reto / suave / arredondado) e a **fonte** (herdar do tema do site, sistema ou serifada). Ao alterar qualquer item, o tema passa a "Customizado".
 
-> ⚠️ **Aviso de contraste.** Se uma combinação ficar difícil de ler (ex.: texto claro sobre fundo claro), aparece um **alerta de contraste** (padrão de acessibilidade WCAG AA). É só um lembrete — você ainda pode salvar —, mas cores legíveis ajudam todos os visitantes, inclusive pessoas com baixa visão.
+> ⚠️ **Aviso de contraste (a maioria dos elementos).** Se uma combinação ficar difícil de ler (ex.: texto claro sobre fundo claro), aparece um **alerta de contraste** (padrão de acessibilidade WCAG AA). Para a maior parte da tela, é só um lembrete — você ainda pode salvar —, mas cores legíveis ajudam todos os visitantes, inclusive pessoas com baixa visão.
+
+### Quando o plugin recusa salvar
+
+Existe **uma exceção** à regra acima, e ela é mais rígida: se, no tema **Customizado**, alguma combinação de cores deixar o **texto ilegível sobre o fundo em algum elemento do aviso de cookies** — e o aviso estiver **ativo** —, o V3RLGPD **recusa salvar** e mostra qual combinação reprovou, em vez de só avisar.
+
+> 💡 **Por que só o aviso de cookies é tratado assim**
+>
+> É ali que a pessoa **consente ou recusa** o uso de dados no seu site. Um botão "Aceitar" ou "Recusar" que ninguém consegue ler compromete se aquela escolha foi realmente **consciente** — e isso deixa de ser uma questão de estética e passa a ser uma questão jurídica: um consentimento que a pessoa não teve como ler direito é frágil para valer como prova. Por isso, para este elemento específico, o plugin não deixa passar — diferente do aviso geral de contraste, que é só um lembrete em qualquer outro lugar da tela.
+
+Isso **não acontece com os temas prontos** (V3RLGPD, Neutro Escuro, Terra, Oceano, Alto Contraste) — todos já foram revisados e garantem contraste suficiente no aviso de cookies. A recusa só aparece para quem personaliza as cores manualmente e chega a uma combinação que compromete a leitura.
+
+**Caminho de saída:** ajuste a cor apontada (o aviso diz qual combinação falhou) até a mensagem de recusa sumir, **ou** volte a um dos temas prontos, que já vêm com o contraste garantido.
+
+➡️ O aviso de cookies em si — posição, categorias, textos — está em [Consentimento & Cookies](/modulos/consentimento/#banner-de-cookies).
 
 ## Saída de Dados
 

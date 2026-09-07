@@ -8,6 +8,20 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versão 1.72 — A página de Gestão ganha identidade própria, e o aviso de cookies fica mais flexível e mais protegido
+
+Três mudanças, todas na aparência das telas públicas.
+
+- **A página de Gestão passa a seguir o tema da organização.** Antes, a tela aberta pelo shortcode `[v3rlgpd_gestao]` sempre usava as cores padrão do produto, mesmo com um tema configurado em Configurações → Aparência. Agora ela acompanha, do mesmo jeito que a Central de Privacidade já acompanhava. Quem já tem um tema definido não precisa fazer nada.
+- **A logo dessa página também é escolha da organização.** Em Configurações → Aparência há uma nova opção com três caminhos: logo do V3RLGPD (o padrão), logo da própria organização (a mesma de Configurações → Organização, sem upload novo) ou nenhuma logo. Escolhendo "logo da organização" sem ter enviado nenhuma, a tela continua mostrando a do V3RLGPD, em vez de ficar vazia.
+- **O aviso de cookies ganha posição configurável.** Em Configurações → Banner de Cookies: faixa no rodapé (o padrão de sempre), canto inferior esquerdo, canto inferior direito, ou centro da tela. No celular, qualquer escolha vira faixa, para não espremer o conteúdo.
+
+> ✅ **Os botões do aviso de cookies — e dos formulários públicos de solicitação de direitos e de denúncia — não ficam mais "meio pintados" pelo tema do site.** Alguns temas mudavam a cor de fundo de um botão sem tocar na cor do texto, deixando-o ilegível sem que ninguém tivesse escolhido isso. Corrigido: fundo e texto agora vêm sempre do mesmo lugar.
+
+> ⚠️ **Trava nova ao personalizar cores.** No tema "Customizado", se alguma combinação deixar o texto ilegível sobre o fundo em algum elemento do aviso de cookies (e o aviso estiver ativo), o V3RLGPD **recusa salvar** e explica qual combinação reprovou — diferente do aviso de contraste do resto da tela, que continua sendo só um lembrete. O motivo: é ali que a pessoa consente ou recusa o uso de dados, e um botão ilegível põe em dúvida se essa escolha foi consciente. Não acontece com os temas prontos. Para resolver: ajuste a cor apontada até a mensagem sumir, ou volte a um tema pronto.
+
+Veja em [Configurações › Aparência](/modulos/configuracoes/#aparência), [Gestão no site](/modulos/gestao-frontend/) e [Consentimento & Cookies](/modulos/consentimento/#banner-de-cookies).
+
 ## Versão 1.69 — A listagem de documentos ganha resumo e "Ler na íntegra"
 
 Um documento **interno** (redigido no editor do plugin) na Central de Privacidade ou em qualquer listagem agora aparece como **resumo + comando "Ler na íntegra"**, em vez do texto completo despejado direto na página. Um clique abre o texto na mesma tela, sem sair dela.

@@ -6,7 +6,7 @@ permalink: /modulos/gestao-frontend/
 role: encarregado
 routes: ["#/"]
 screenshots: [v3rlgpd-80-gestao-dashboard, v3rlgpd-81-gestao-mapa, v3rlgpd-82-gestao-ropa, v3rlgpd-83-gestao-politicas, v3rlgpd-84-gestao-dashboard-mobile]
-last_verified: 2026-08-16
+last_verified: 2026-09-06
 status: publicado
 ---
 
@@ -94,6 +94,10 @@ Não é um erro nem uma permissão negada pelo plugin — é a configuração mo
 > 💡 **Caixas de marcação e botões de opção na cor da marca**
 >
 > Marcados, esses controles aparecem na cor definida em **Configurações → Aparência**, não no azul padrão do WordPress — tanto aqui na página de gestão quanto no painel administrativo. É mudança só de aparência; nada no comportamento muda.
+
+> 💡 **A página inteira agora segue o tema — e a logo é escolha sua**
+>
+> Até pouco tempo, esta página usava sempre as cores padrão do produto, mesmo que a organização tivesse configurado um tema próprio. Isso passou a valer sozinho: o tema definido em **Configurações → Aparência** (pronto ou personalizado) agora se aplica aqui também, do mesmo jeito que já se aplicava à Central de Privacidade. Nessa mesma aba, você também escolhe qual **logo** aparece no topo desta página — a do V3RLGPD, a da sua organização (a mesma de Configurações → Organização) ou nenhuma. Veja [Configurações › Aparência](/modulos/configuracoes/#aparência).
 
 ## No celular
 

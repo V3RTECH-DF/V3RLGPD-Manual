@@ -6,7 +6,7 @@ permalink: /modulos/consentimento/
 role: encarregado
 routes: ["/central-de-privacidade/", "#/settings"]
 screenshots: [v3rlgpd-21-cookie-banner, v3rlgpd-08b-settings-cookies, v3rlgpd-103-cookies-escolha-vigente, v3rlgpd-104-cookies-sem-escolha]
-last_verified: 2026-09-05
+last_verified: 2026-09-06
 status: publicado
 ---
 
@@ -98,9 +98,24 @@ Vale para os três casos — aceite total, aceite parcial e **recusa**. A recusa
 
 Se o registro não conseguir chegar ao servidor no momento do clique (uma falha de rede, por exemplo), a decisão fica guardada no navegador do visitante e é reenviada na próxima vez que ele abrir uma página. A escolha dele não se perde.
 
+### Posição na tela
+
+Em **Configurações → Banner de Cookies**, escolha onde o aviso aparece:
+
+- **Faixa no rodapé** — o padrão, como sempre foi: uma barra ocupando a largura da tela, na parte de baixo.
+- **Canto inferior esquerdo**
+- **Canto inferior direito**
+- **Centro da tela**
+
+> 💡 **No celular, é sempre faixa.** Qualquer uma das quatro opções, num visitante de celular, aparece como faixa no rodapé — um aviso posicionado num canto ou no centro ficaria espremido demais numa tela estreita para caber o texto e os três botões com conforto. A escolha de posição vale só para telas maiores (tablet e desktop).
+
 ### Aparência
 
 O banner **segue o tema definido em Configurações → Aparência**. Ao trocar o preset (ou personalizar as cores), o banner acompanha — cores, botões, arredondamento — junto com o resto das telas públicas do plugin.
+
+> ✅ **Os botões não ficam mais "meio pintados" pelo tema do site.** Alguns temas de WordPress aplicam sua própria cor de fundo a botões genéricos da página, sem tocar na cor do texto — o resultado, antes, podia ser um botão "Aceitar Todos" com o fundo do tema e o texto do plugin, uma combinação às vezes ilegível que ninguém escolheu de propósito. Os botões do aviso de cookies agora **sempre mantêm fundo e texto vindos do mesmo lugar** (o tema do V3RLGPD), imunes a essa interferência. A mesma correção vale para os formulários públicos de **solicitação de direitos** (na Central de Privacidade) e de **denúncia** (ECA Digital).
+
+> ⚠️ **Personalizando as cores, há um limite que não é só recomendação.** Ao montar um tema "Customizado" em Configurações → Aparência, se a combinação escolhida deixar o texto de algum elemento **deste aviso** ilegível sobre o fundo, o plugin **recusa salvar** — diferente do aviso de contraste do resto da tela, que é só um lembrete. O motivo: é aqui que o titular consente ou recusa, e um botão que não se lê põe em dúvida se a escolha foi consciente. Veja [Configurações › Quando o plugin recusa salvar](/modulos/configuracoes/#quando-o-plugin-recusa-salvar).
 
 ## Configurar o banner
 
