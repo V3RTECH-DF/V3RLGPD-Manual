@@ -162,6 +162,17 @@ O aviso de documentos legados (tela de Políticas) muda de texto e ganha uma aç
 
 Não capturado nesta rodada — entra no lote acumulado de recaptura, a ser tratado por agente próprio.
 
+## Lote de recaptura — Detector ganha estado de falha (#108, ainda não lançada — 2026-09-07)
+
+A tela do Detector (varredura que confere o site publicado) ganhou um **estado novo**: análise que falhou por falta de progresso, com explicação do que houve. Antes só existiam "analisando" (girando) e "concluído" — o estado de falha não existia, e uma varredura travada ficava indefinidamente em "analisando" sem nenhuma tela própria para isso.
+
+**Afetados:**
+- `90-detector` — se o print atual mostra só os estados "analisando" e "concluído", fica incompleto: falta o estado de falha novo.
+
+**Novo print a considerar (nunca existiu um específico deste estado no roteiro atual):** o Detector no estado de falha, mostrando a explicação — útil para ilustrar o que o usuário vê quando a varredura desiste.
+
+Não capturado nesta rodada — entra no lote acumulado de recaptura (junto com os itens acima), a ser tratado por agente próprio.
+
 ## Executado — 2026-09-07, recaptura do painel (32 prints)
 
 Ambiente: `dev-wp` (`localhost:3080`), v1.74.1 + as entregas #93/#99 e #102 ainda não publicadas. Desktop 1920×1080, página inteira.
