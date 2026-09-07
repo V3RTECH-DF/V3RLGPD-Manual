@@ -193,3 +193,23 @@ Ambiente: `dev-wp` (`localhost:3080`), v1.74.1 + as entregas #93/#99 e #102 aind
 ### Ainda pendente
 
 O restante do lote da navegação em barra única (editores e assistentes, telas com estado especial), as telas novas de **ciência de documentos**, e o lote de páginas públicas. O texto do manual ainda não foi revisado para a navegação nova — instruções do tipo "clique em Shortcodes no menu" continuam desatualizadas.
+
+## Executado — 2026-09-07, segunda rodada (v1.76.0)
+
+**Capturados (5):** `03-policy-editor`, `09-wizard`, `11-templates`, `34-assistente-intro` — e **`106-ciencia-sem-decisao`** (novo: o aviso de documentos sem decisão, já com as duas ações da v1.76.0, conectado ao guia de ciência).
+
+⚠️ **Numeração:** `106` em diante é a faixa livre. Os números `97`–`100` que este roteiro pedia para as telas de ciência **já pertencem** a outros prints — não usar.
+
+### Armadilhas desta rodada
+
+1. ⚠️ **Nome de print é contrato com o texto — e print com o nome de outra tela é pior que print velho.** Numa passada, o endereço da *lista* de políticas foi salvo sob o nome do *editor*. A ilustração passa a contradizer a instrução, e nada acusa.
+2. ⚠️ **Conferir "qual tela é esta" pelo título da seção NÃO discrimina.** Lista, editor, assistente e galeria de Políticas devolvem todos "Políticas" — a verificação passava nas quatro. O que separa uma tela da outra é o conteúdo **abaixo** do cabeçalho e das barras de navegação; é ele que precisa ser medido antes de gravar.
+3. **Não inventar nome de print.** Sete telas foram capturadas nesta rodada com nomes improvisados e **descartadas** — elas existem no produto (consentimentos, denúncias, RIPD, relatório do inventário, verificador de formulários) mas não têm print no manual. O nome tem de vir do texto que vai usá-lo, não do palpite de quem captura.
+
+### Ainda pendente
+
+- **Ciência de documentos:** mensagem de erro de versão obrigatória, e o diálogo "o endereço mudou, mas a versão continua a mesma".
+- **Retenção no inventário (#79):** a seção da atividade com o confronto entre prazo declarado e expurgo real — os três estados, e o registro de expurgo externo.
+- **Detector (#108):** o estado de falha ("A análise não terminou"). Difícil de produzir sob demanda: exige uma varredura que pare de avançar.
+- **Telas sem print no manual** (as sete acima), se o texto vier a precisar delas.
+- O restante do lote da navegação em barra única.

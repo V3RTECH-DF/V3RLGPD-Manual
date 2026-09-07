@@ -83,14 +83,21 @@ Se a aba de **Ciência de documentos** sempre esteve vazia mesmo com pessoas con
 
 Não há como reconstruir retroativamente confirmações que não chegaram a ser gravadas. Se você depende dessa prova para algum documento específico, o caminho é [publicar uma nova versão](/guias/publicar-politica/) dele (ou reabrir a ciência pelo bloco de [documentos cadastrados antes desta funcionalidade](#documentos-cadastrados-antes-desta-funcionalidade), se for o caso) — isso reabre o aviso para todo mundo e as novas confirmações passam a contar.
 
-## Documentos cadastrados antes desta funcionalidade
+## Documentos sobre os quais ninguém decidiu ainda
 
-Documento **publicado antes de existir "Exigir ciência"** ficou, naturalmente, com essa opção **desligada**. A lista de **Políticas** mostra, no topo, um aviso com quantos documentos publicados estão nessa situação:
+Documento **publicado antes de existir "Exigir ciência"** ficou, naturalmente, com essa opção **desligada** — e sem ninguém ter decidido se deveria continuar assim. A lista de **Políticas** mostra, no topo, um aviso listando só os documentos **nessa situação de indecisão**: nem alguém ligou "Exigir ciência" neles, nem alguém registrou que eles não precisam exigir.
 
-> *"[N] documentos publicados não exigem ciência dos usuários. Cadastrados antes desta funcionalidade existir. Escolha abaixo quais devem passar a exigir — nada é ligado automaticamente."*
+Para cada documento do aviso, você tem **duas saídas** — e as duas resolvem a pendência:
 
-Marque, um a um ou todos de uma vez (**Selecionar todos**), quais documentos devem passar a exigir ciência, e confirme em **Exigir ciência para [N] selecionado(s)**. A confirmação avisa quantos documentos serão afetados: *"Isso vai passar a exigir ciência de [N] documento(s) selecionado(s). Todos os usuários logados verão o aviso até confirmarem."*
+- **Passar a exigir ciência** — liga a exigência; a partir da próxima publicação (ou de imediato, se o documento já estiver ativo), os usuários logados que ainda não confirmaram passam a ver o aviso.
+- **Registrar que não exige** — uma decisão explícita de que aquele documento **não precisa** de ciência (por exemplo, um relatório de atividades de anos atrás). Não liga nada; só documenta que a organização já avaliou e decidiu não exigir.
 
-*(captura pendente — aviso e seleção em lote, sem print ainda; ver `_manual/roteiro-recaptura.md`)*
+O aviso diz, no topo, quantos documentos **ainda não tiveram uma decisão sobre exigir ciência dos usuários** — e os dois botões são **"Exigir ciência para N selecionado(s)"** e **"Decidir que não exige para N selecionado(s)"**. Enquanto nenhum documento estiver marcado, os dois ficam desabilitados, e a tela avisa que é preciso **selecionar ao menos um documento acima para habilitar as ações**.
 
-> ⚠️ **Nada é ligado automaticamente, de propósito.** Nem todo documento antigo precisa virar cobrança de ciência — um relatório de atividades de anos atrás, por exemplo, provavelmente não. É a sua organização quem decide, documento por documento, quais realmente merecem essa exigência.
+Marque, um a um ou todos de uma vez (**Selecionar todos**), e aplique a ação em lote correspondente. Assim que um documento recebe uma das duas decisões, ele **sai do aviso** — não volta a aparecer ali, porque deixou de ser um caso "ninguém decidiu ainda".
+
+[![Aviso de documentos sem decisão sobre exigir ciência](/assets/screenshots/v3rlgpd-106-ciencia-sem-decisao.png)](/assets/screenshots/v3rlgpd-106-ciencia-sem-decisao.png)
+
+> ⚠️ **Antes, só existia a primeira saída.** Quem decidia conscientemente que um documento **não** precisava de ciência não tinha como registrar isso — o documento continuava aparecendo no aviso para sempre, como se ninguém tivesse olhado. Agora essa decisão também é registrada, e some da lista como as demais.
+>
+> Nada é ligado automaticamente, nas duas direções: a organização decide, documento por documento, o que realmente merece a exigência.

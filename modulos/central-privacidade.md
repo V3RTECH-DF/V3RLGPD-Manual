@@ -50,7 +50,7 @@ Há duas formas:
    - `[v3rlgpd_selo]` — o selo de conformidade da sua organização, para o rodapé do site. Aceita `formato="fita"` (ou `medalha`, `cartao`), `mostrar_numero="sim"` e `link="nao"` (ver [Painel › Selo](/modulos/painel/#o-selo-de-conformidade-no-painel)).
    - `[v3rlgpd_gestao]` — ⚠️ **este não é público.** Traz a administração da conformidade para dentro do site, para quem cuida do assunto trabalhar sem entrar no painel do WordPress. Publique numa página **restrita**, nunca aqui na Central nem em página aberta a visitantes (ver [Gestão no site](/modulos/gestao-frontend/)).
 
-> Esta é a lista completa: são os **onze** shortcodes do plugin. Você também a encontra dentro do plugin, em **Configurações → Shortcodes Disponíveis**, com um botão que copia cada um.
+> Esta é a lista completa: são os **onze** shortcodes do plugin. Você também a encontra dentro do plugin, na aba **Configurações → Shortcodes**, com um botão que copia cada um.
 
 > ⚠️ **Página montada à mão é responsabilidade sua**
 >

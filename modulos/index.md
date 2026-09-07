@@ -9,16 +9,16 @@ permalink: /modulos/
 
 Esta seção é a referência de consulta: uma página por módulo do plugin, explicando o que ele faz, por que importa e como usar — com capturas de tela reais.
 
-> 🧭 **Como a navegação está organizada (v1.73)**
+> 🧭 **Como a navegação está organizada (v1.76)**
 >
-> O menu lateral do WordPress tem **um único item, V3RLGPD**. Toda a navegação acontece dentro da tela do plugin, numa **barra horizontal no alto**, com os mesmos **8 itens** de sempre, na mesma ordem:
-> **Painel · Auditoria de Conformidade · Inventário (ROPA) · Relatório de Impacto (RIPD) · Políticas · Atendimento ao Titular · Configurações · Shortcodes**.
+> O menu lateral do WordPress tem **um único item, V3RLGPD**. Toda a navegação acontece dentro da tela do plugin, numa **barra horizontal no alto**, com os mesmos **7 itens** de sempre, na mesma ordem:
+> **Painel · Auditoria de Conformidade · Inventário (ROPA) · Relatório de Impacto (RIPD) · Políticas · Atendimento ao Titular · Configurações**.
 >
 > Itens com subdivisões ganham uma **segunda barra**, logo abaixo da primeira:
 > - **Auditoria de Conformidade** → abas **Detector** e **Mapa de Conformidade**.
 > - **Inventário (ROPA)** → abas **Inventário** e **Verificador de Formulários**.
 > - **Atendimento ao Titular** → abas **Consentimentos · Atendimentos · Denúncias · Incidentes · Retenção · Ações do Encarregado**.
-> - **Configurações** → inclui a aba **Equipe / Acessos** (só administrador).
+> - **Configurações** → inclui as abas **Equipe / Acessos**, **Shortcodes** e **Licença**, entre outras. **Shortcodes** deixou de ser item de primeiro nível e hoje mora aqui, entre Equipe / Acessos e Licença — só quem enxerga Configurações chega lá.
 >
 > As páginas abaixo continuam organizadas por módulo (para consulta). Quando um passo disser "no menu, abra o módulo X", procure-o pela aba do grupo correspondente. Endereço salvo nos favoritos continua funcionando — você é levado direto para a tela certa dentro da nova navegação.
 

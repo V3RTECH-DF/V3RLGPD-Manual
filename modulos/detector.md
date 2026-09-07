@@ -34,6 +34,18 @@ Fica na aba **Detector**, dentro de **Auditoria de Conformidade** (primeira aba)
 
 > No modo Completo, enquanto a análise roda, a tela mostra o progresso ("X de Y páginas"). O e-mail de conclusão vai para quem iniciou a análise **e** para o Encarregado.
 
+### Quando a análise falha
+
+Uma análise pode **não terminar**. Se ela parar de avançar — por exemplo, o site fica indisponível no meio da varredura, ou uma página trava o processo —, o Detector **desiste e explica o que houve**, em vez de ficar girando indefinidamente em "analisando".
+
+Na tela, isso aparece como **"A análise não terminou"**, com a orientação de **escolher um modo acima e tentar novamente**. O número de páginas que chegaram a ser analisadas antes da desistência fica visível — ele ajuda a distinguir "não saiu do lugar" de "parou no meio".
+
+*(captura pendente — estado de falha novo, sem print ainda; ver `_manual/roteiro-recaptura.md`)*
+
+> ⚠️ **Análise que falhou não manda e-mail de resumo.** O aviso por e-mail avisado acima é só para análise **concluída**. Se você (ou o Encarregado) esperava o e-mail e ele não chegou, confira a tela do Detector antes de supor que a análise ainda está rodando — ela pode já ter desistido e estar esperando você tentar de novo.
+
+Diante de uma falha, o caminho é **rodar de novo**: se o problema foi passageiro (uma instabilidade momentânea do site), a nova tentativa costuma terminar normalmente. Se falhar de novo, considere um modo mais leve (Rápido ou Padrão em vez de Completo) para isolar se o problema está numa página específica.
+
 ## Como ler o relatório
 
 No topo, você vê a **situação geral** ("Atenção necessária", "Bom" ou "Excelente") e a contagem por gravidade:

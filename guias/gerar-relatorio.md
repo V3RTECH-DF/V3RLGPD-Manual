@@ -20,7 +20,7 @@ Um documento de uma página que mostra, em PDF, como anda a conformidade da sua 
 
 ## Passo a passo
 
-1. Abra **V3RLGPD → Dashboard**.
+1. Abra **V3RLGPD → Painel**.
 2. Clique em **Exportar Relatório** (alto da tela).
 3. Confira o panorama: **Status de Conformidade**, **Gestão de Direitos (DSAR)** e **Transparência**.
 4. Clique em **Baixar PDF** — o relatório é gerado e baixado como um arquivo PDF pronto (com o cabeçalho e a logo da organização). Se preferir usar a impressão do navegador, o botão **Imprimir** continua disponível.

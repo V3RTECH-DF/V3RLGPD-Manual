@@ -5,14 +5,14 @@ parent: "Módulos"
 permalink: /modulos/configuracoes/
 role: encarregado
 routes: ["#/settings"]
-screenshots: [v3rlgpd-04b-dsar-declaracao-escopo, v3rlgpd-69-config-encarregado, v3rlgpd-70-encarregado-autofill, v3rlgpd-08b-settings-cookies, v3rlgpd-08c-settings-webhooks, v3rlgpd-08d-settings-paginas, v3rlgpd-08f-settings-aparencia, v3rlgpd-08g-settings-aparencia-custom, v3rlgpd-08e-settings-saida, v3rlgpd-08i-settings-import, v3rlgpd-08h-settings-desinstalacao, v3rlgpd-92-config-licenca, v3rlgpd-99-licenca-sem-ativar]
+screenshots: [v3rlgpd-04b-dsar-declaracao-escopo, v3rlgpd-69-config-encarregado, v3rlgpd-70-encarregado-autofill, v3rlgpd-08b-settings-cookies, v3rlgpd-08c-settings-webhooks, v3rlgpd-08d-settings-paginas, v3rlgpd-08f-settings-aparencia, v3rlgpd-08g-settings-aparencia-custom, v3rlgpd-08e-settings-saida, v3rlgpd-08i-settings-import, v3rlgpd-08h-settings-desinstalacao, v3rlgpd-92-config-licenca, v3rlgpd-99-licenca-sem-ativar, v3rlgpd-105-shortcodes-aba]
 last_verified: 2026-09-06
 status: publicado
 ---
 
 # Configurações
 
-A tela **Configurações** reúne, em um só lugar, os ajustes gerais do V3RLGPD — da identidade da organização à exibição das políticas e à exportação dos dados. Ela é organizada em **oito abas**.
+A tela **Configurações** reúne, em um só lugar, os ajustes gerais do V3RLGPD — da identidade da organização à exibição das políticas e à exportação dos dados. Ela é organizada em abas; esta página detalha as oito primeiras (visíveis a quem administra a conformidade) e, mais abaixo, **Equipe / Acessos** (só administrador), **Shortcodes** e **Licença**.
 
 > 💡 **Por que isso importa**
 >
@@ -24,7 +24,7 @@ A tela **Configurações** reúne, em um só lugar, os ajustes gerais do V3RLGPD
 |---|---|---|
 | **Organização** | Identidade do controlador (razão social, CNPJ, endereço, contato), logo e a **declaração de escopo de tratamento**. | (abaixo) |
 | **Encarregado** | Dados do Encarregado e modo de exclusão de políticas. | [Configurar o Encarregado](/guias/configurar-dpo/) |
-| **Banner de Cookies** | Ativar/desativar o banner e gerenciar os scripts por categoria. | [Consentimento & Cookies](/modulos/consentimento/) |
+| **Cookies & Analytics** | Ativar/desativar o banner e gerenciar os scripts por categoria. | [Consentimento & Cookies](/modulos/consentimento/) |
 | **Webhooks** | Enviar eventos (nova solicitação, alteração de política, incidente, consentimento) para automações externas. | (abaixo) |
 | **Retenção & Expurgo** | Regras globais de descarte/anonimização e a fila de retenção. | [Retenção & Expurgo](/modulos/retencao/) |
 | **Páginas & Integração** | Escolher a página da Central, definir a exibição padrão das políticas e copiar os shortcodes. | [Central de Privacidade](/modulos/central-privacidade/) |
@@ -69,9 +69,9 @@ Aqui você cadastra o **Encarregado** — nome/setor, e-mail e telefone, que apa
 
 > ✅ **Inativar ≠ excluir.** Para tirar uma política do ar **sem apagá-la**, use **Inativar** na lista de Políticas (reversível). O *Modo de Exclusão* acima rege o botão **Excluir** da lista: *soft* arquiva (preserva o registro) e *hard* apaga em definitivo (perde a rastreabilidade). Veja [Políticas › Excluir](/modulos/politicas/#excluir-uma-política).
 
-## Banner de Cookies
+## Cookies & Analytics
 
-[![Configurações — Banner de Cookies](/assets/screenshots/v3rlgpd-08b-settings-cookies.png)](/assets/screenshots/v3rlgpd-08b-settings-cookies.png)
+[![Configurações — Cookies & Analytics](/assets/screenshots/v3rlgpd-08b-settings-cookies.png)](/assets/screenshots/v3rlgpd-08b-settings-cookies.png)
 
 Você decide **se** exibe o banner e cadastra os scripts por categoria (necessários, análise, marketing). Com o banner **desativado**, os scripts não essenciais **não são carregados** (sem consentimento, nada carrega). Detalhes em [Consentimento & Cookies](/modulos/consentimento/).
 
@@ -190,6 +190,17 @@ Define o que acontece com os dados **se você remover o plugin** pelo painel do 
 - **Apagar tudo definitivamente** — remove todas as tabelas e registros do banco ao desinstalar. É **irreversível**, por isso o sistema pede uma confirmação antes de salvar.
 
 > 💡 **Exporte antes de apagar.** Se for desativar de vez, gere uma exportação (acima) antes de marcar "Apagar tudo".
+
+## Shortcodes
+
+> 🧭 **Onde encontrar**
+>
+> **Shortcodes** deixou de ser item próprio da navegação e passou a ser uma **aba dentro de Configurações**, entre **Equipe / Acessos** e **Licença**. A aba herda a mesma guarda de acesso de Configurações: quem não vê Configurações não vê Shortcodes — hoje isso exclui só o **Atendente**. O **Auditor** tem leitura em todos os módulos, Configurações incluído, e por isso continua enxergando esta aba.
+
+[![Configurações — aba Shortcodes](/assets/screenshots/v3rlgpd-105-shortcodes-aba.png)](/assets/screenshots/v3rlgpd-105-shortcodes-aba.png)
+*A aba Shortcodes, entre Equipe / Acessos e Licença, com o catálogo completo pronto para copiar.*
+
+A aba reúne o **catálogo completo dos onze shortcodes** do plugin — os mesmos usados para montar uma Central de Privacidade à mão, publicar o selo de conformidade ou embutir a gestão numa página do site — com um botão que copia cada um. Veja a lista comentada, código a código, em [Central de Privacidade › Como publicar](/modulos/central-privacidade/#como-publicar).
 
 ## Licença
 

@@ -38,7 +38,7 @@ Para inserir a Central (ou só o formulário) em outra página, inclusive em con
 - `[v3rlgpd_politicas]` — a lista dos seus documentos. Sem mais nada, mostra todos os ativos; dá para escolher quais aparecem — veja [Filtrar quais documentos a listagem mostra](/modulos/central-privacidade/#filtrar-quais-documentos-a-listagem-mostra).
 - `[v3rlgpd_cookies]` — preferências de cookies (só aparece com o banner ativo).
 
-Estes são os que servem para montar uma Central à mão. O plugin tem **onze** no total — a lista completa, com o que cada um faz, está em [Central de Privacidade](/modulos/central-privacidade/#como-publicar), e também dentro do plugin, em **Configurações → Shortcodes Disponíveis**.
+Estes são os que servem para montar uma Central à mão. O plugin tem **onze** no total — a lista completa, com o que cada um faz, está em [Central de Privacidade](/modulos/central-privacidade/#como-publicar), e também dentro do plugin, na aba **Configurações → Shortcodes**.
 
 > 💡 **O formulário de solicitação agora usa a fonte do seu site**
 >

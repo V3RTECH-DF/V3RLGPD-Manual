@@ -53,6 +53,10 @@ Como funciona, em poucos passos:
   > 💡 **A sugestão de retenção usa a primeira base com sugestão**
   >
   > Quando mais de uma base está marcada, o prazo de retenção sugerido automaticamente vem da primeira base (na ordem da lista) que tiver uma sugestão associada — e só preenche o campo se ele estiver vazio ou ainda tiver a sugestão anterior. É um palpite editável, não uma regra: se você já digitou um prazo à mão, ele não é sobrescrito.
+
+  > 🆕 **O prazo declarado agora é conferido com o expurgo real**
+  >
+  > Este é o prazo **declarado** — texto livre, publicado ao titular na vitrine de transparência. Ele não apaga nada sozinho. A tela de [Retenção & Expurgo](/modulos/retencao/#o-prazo-declarado-e-o-expurgo-real-confrontados) passou a avisar quando esse prazo e o expurgo automático de fato configurado não conversam.
 - **Transferência Internacional** — se os dados saem do Brasil (ex.: um serviço hospedado no exterior). Ao marcar essa opção, você informa também o **país(es) de destino** e o **mecanismo de proteção (art. 33)** — a base legal que permite os dados saírem do Brasil. Na dúvida, para fornecedores dos Estados Unidos ou da Europa, o mais comum é **"Cláusulas-padrão contratuais"**. Há ainda um campo opcional **"Detalhe da garantia"** para anotar, por exemplo, a cláusula ou a certificação que sustenta a transferência. Esse mecanismo aparece nos relatórios e é usado pelo [Assistente de Políticas](/modulos/politicas/) para redigir a cláusula de transferência internacional.
 
 [![Campos de transferência internacional com o mecanismo de proteção do art. 33](/assets/screenshots/v3rlgpd-75-ropa-transferencia-mecanismo.png)](/assets/screenshots/v3rlgpd-75-ropa-transferencia-mecanismo.png)

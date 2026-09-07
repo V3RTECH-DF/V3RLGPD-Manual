@@ -77,6 +77,20 @@ Os dados do **site** (usuários, comentários, pedidos do WooCommerce, entradas 
 >
 > Nenhuma atividade do ROPA é expurgada automaticamente a menos que o Encarregado **ligue** explicitamente e escolha conector + prazo. Isso protege os dados que **devem** ser mantidos — por exemplo, um pedido com **obrigação fiscal** de guarda por 5 anos.
 
+### O prazo declarado e o expurgo real, confrontados
+
+Cada atividade do ROPA sempre teve um **prazo de retenção declarado** — o texto que descreve por quanto tempo os dados ficam guardados (ex.: "24 meses", "enquanto durar o contrato", "até 2 anos após o término"), publicado ao titular na [vitrine de transparência](/modulos/inventario-ropa/#publicar-o-ropa-vitrine-de-transparência). Esse texto **sempre foi livre** e **continua sendo**: você escreve o que faz sentido para a atividade, e ele **não aciona nada sozinho** — quem de fato apaga ou anonimiza os dados é o interruptor de retenção automática desta seção, com conector e prazo próprios.
+
+O que muda: a tela agora **confronta** os dois e avisa quando eles não conversam. Três situações:
+
+- **Dá para ligar o expurgo automático, e ele está desligado** — existe um conector aplicável para aquela atividade, mas o interruptor continua **desligado**. O prazo declarado publicamente não tem, hoje, nada que o cumpra de fato.
+- **O expurgo está ligado, mas não alcança nada** — o interruptor está **ligado**, só que a atividade não tem formulário nem conector vinculado para executá-lo. Antes, a tela dava a entender que havia expurgo ativo; não havia.
+- **Não há como automatizar** — os dados vivem **fora do alcance do plugin** (planilha, papel, sistema de terceiro), e não existe conector possível. Nesse caso, você **registra como o expurgo é feito fora do sistema** (ex.: "planilha apagada manualmente pelo RH a cada ciclo"). Esse registro é **interno**: não vai para a vitrine pública, só documenta a resposta da organização ao aviso.
+
+> 💡 **Texto que não dá para comparar não vira alarme falso**
+>
+> Quando o prazo declarado está escrito de um jeito que não dá para traduzir em um número — "enquanto durar o contrato", "até 2 anos após o término" — a tela **diz que não dá para comparar**, em vez de inventar uma divergência. O confronto só aponta problema quando há mesmo algo para confrontar.
+
 ## Conectores: o que o V3RLGPD sabe expurgar
 
 Um **conector** é a "ponte" que sabe encontrar e anonimizar um tipo de dado. O plugin já vem com conectores para as origens mais comuns:
