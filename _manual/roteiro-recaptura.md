@@ -96,6 +96,15 @@ Exige publicar as páginas públicas do plugin (Central de Privacidade com short
 - (ROPA/RIPD) — telas de relatório do Inventário e do RIPD finalizado com **"Baixar PDF"** (nomes atuais dos prints de ROPA/RIPD).
 - *(Opcional)* incluir um print de um **PDF gerado** (cabeçalho com logo) como ilustração — novo asset, nomear `v3rlgpd-XX-relatorio-pdf`.
 
+## Lote de recaptura — v1.74.0, ciência de documentos passa a funcionar (2026-09-07)
+
+> Telas novas desta versão, sem print ainda. Ambiente: `dev-wp`, login DEV do Bruno. Precisa de: 1 documento externo com "Exigir ciência" ligado e versão preenchida, e ao menos 1 documento antigo com "Exigir ciência" desligado (para o aviso de documentos legados aparecer na lista).
+
+- `v3rlgpd-97-ciencia-externa-versao-obrigatoria` — editor de política **externa**, "Exigir ciência" marcado, campo Versão Atual em destaque (obrigatório). Se der para capturar a mensagem de erro ao tentar salvar sem versão, melhor ainda.
+- `v3rlgpd-98-ciencia-endereco-mudou` — diálogo **"O endereço mudou, mas a versão continua a mesma"**, ao salvar um documento externo trocando a URL sem trocar a versão. Referenciado em `guias/exigir-ciencia-documento.md`.
+- `v3rlgpd-99-ciencia-documentos-antigos` — lista de **Políticas**, aviso de documentos legados no topo (contagem + checkboxes + botão "Exigir ciência para N selecionado(s)"). Referenciado em `guias/exigir-ciencia-documento.md`.
+- *(opcional, baixo valor)* `v3rlgpd-100-ciencia-sem-permissao` — tela **Ciência de documentos** no estado "Você não tem permissão…", para ilustrar a distinção com "Nenhum registro ainda" (exige logar com um papel sem acesso a esse módulo).
+
 **Baixo valor (polish; recapturar só se sobrar tempo):**
 - `v3rlgpd-dpo-02-form` e demais **modais** — botão "X" de fechar maior (#28). Diferença sutil; só recapturar oportunisticamente.
 

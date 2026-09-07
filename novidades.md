@@ -8,6 +8,21 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versão 1.74 — A ciência de documentos passa a registrar as confirmações
+
+A funcionalidade **Exigir ciência** já existia, mas as confirmações não estavam sendo registradas do outro lado — o aviso aparecia e o usuário confirmava, só que nada ficava guardado. Isso está corrigido: as confirmações passam a ser contadas normalmente. Quem já usava vai notar que a aba **Ciência de documentos**, antes sempre vazia, passa a mostrar registros.
+
+Junto com a correção, quatro reforços:
+
+- **Documento externo (PDF, página de wiki, intranet) agora também gera pedido de ciência.** Antes, só o documento redigido no editor do plugin contava.
+- **Documento externo com ciência exigida passa a pedir a versão.** Sem um número de versão não há o que registrar como "a versão que a pessoa confirmou" — o campo, que era opcional, passa a ser obrigatório nesse caso.
+- **Trocar o arquivo sem trocar a versão agora é perguntado, não aceito em silêncio.** Se o endereço do documento externo mudar mas a versão anotada continuar a mesma, o plugin para e pergunta se isso deve reabrir a ciência para todo mundo — porque, sem essa pergunta, um arquivo novo sob o mesmo número de versão deixaria todo mundo marcado como ciente de um texto que nunca leu.
+- **Documento antigo, publicado antes desta funcionalidade existir, ganha um aviso próprio na lista de Políticas**, com a lista de quantos são e a opção de ligar a exigência nos que a organização escolher — documento por documento, nada automático.
+
+> ✅ A tela de **Ciência de documentos** também passa a distinguir **"Nenhum registro de ciência ainda"** (ninguém confirmou nada ainda) de **"Você não tem permissão para ver os registros"** (problema de acesso) — antes as duas apareciam com a mesma frase.
+
+Veja em [Exigir ciência de um documento](/guias/exigir-ciencia-documento/) e [Políticas](/modulos/politicas/).
+
 ## Versão 1.73 — O menu do V3RLGPD vira uma tela só, e o controle de acesso passa a valer também pelo endereço direto
 
 O menu do V3RLGPD no WordPress deixa de ter oito entradas soltas e passa a ter **uma só**. Toda a navegação agora vive dentro da própria tela do plugin, numa **barra horizontal no alto**, com os mesmos oito itens de sempre, na mesma ordem: Painel, Auditoria de Conformidade, Inventário (ROPA), Relatório de Impacto (RIPD), Políticas, Atendimento ao Titular, Configurações e Shortcodes.

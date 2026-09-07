@@ -6,7 +6,7 @@ permalink: /modulos/politicas/
 role: encarregado
 routes: ["#/policies", "#/policies/edit/:id", "#/policies/assistant", "#/templates", "#/policies/types"]
 screenshots: [v3rlgpd-02-policies, v3rlgpd-03-policy-editor, v3rlgpd-09-wizard, v3rlgpd-11-templates, v3rlgpd-95-document-types, v3rlgpd-96-document-types-remove]
-last_verified: 2026-09-05
+last_verified: 2026-09-07
 status: publicado
 ---
 
@@ -20,6 +20,8 @@ O módulo **Políticas** é onde sua organização cria, versiona e publica os d
 > 💡 **Por que isso importa**
 >
 > Transparência é um pilar da LGPD: o titular tem o direito de saber o que você faz com os dados dele. Uma política clara e publicada é a forma mais direta de cumprir esse dever — e a primeira coisa que um financiador ou a <a href="https://www.gov.br/anpd/pt-br" target="_blank" rel="noopener noreferrer">ANPD</a> vão procurar.
+
+> 💡 **Documento publicado antes de existir "Exigir ciência"?** A lista mostra um aviso com quantos estão nessa situação e deixa você escolher quais devem passar a exigir — nada é ligado automaticamente. Veja [Documentos cadastrados antes desta funcionalidade](/guias/exigir-ciencia-documento/#documentos-cadastrados-antes-desta-funcionalidade).
 
 ## Ambiente genérico de políticas
 
@@ -72,6 +74,10 @@ Para a política **externa**, você informa: a **URL** do documento, um **resumo
 > ⚠️ **Versão da política externa é você quem atualiza**
 >
 > Como o texto mora fora do plugin, o V3RLGPD não controla as versões dela. **Atualize o número da versão sempre que publicar uma nova** — manter isso em dia é responsabilidade da sua organização.
+
+> ⚠️ **Com "Exigir ciência" marcado, a versão deixa de ser opcional**
+>
+> Sem um número de versão, não há o que registrar como "a versão que a pessoa confirmou". E se o endereço do documento mudar sem a versão acompanhar, o plugin **para e pergunta** se aquilo deve contar como versão nova — em vez de aceitar em silêncio e deixar todo mundo marcado como ciente de um texto que nunca leu. Veja [Exigir ciência de um documento](/guias/exigir-ciencia-documento/#funciona-para-documento-interno-e-externo).
 
 [![Editor de política externa](/assets/screenshots/v3rlgpd-03b-policy-externa.png)](/assets/screenshots/v3rlgpd-03b-policy-externa.png)
 *Política externa: URL, resumo, versão manual e a escolha de imagem ou ícone pré-definido.*

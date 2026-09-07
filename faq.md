@@ -58,6 +58,14 @@ Sim. Ao criar a política, escolha a origem **Externa** e informe o **link** (PD
 
 Sim. Use **Inativar** na lista de Políticas: a política some da Central e dos shortcodes, mas o conteúdo, o histórico de versões e os consentimentos são preservados — e você pode **reativar** quando quiser. É o caminho indicado quando uma política foi incorporada a outra ou deixou de valer. Veja [Políticas › Inativar e reativar](/modulos/politicas/#inativar-e-reativar-uma-política).
 
+## Publiquei uma versão nova e o aviso de ciência voltou para quem já tinha confirmado. É defeito?
+
+Não, é o comportamento esperado. A confirmação vale **por versão** — quando uma versão nova é publicada, quem confirmou a anterior ainda não confirmou **esta**, então volta a ver o aviso. É justamente isso que dá valor à ciência: sem essa reabertura, "confirmei uma vez" seria tratado como "confirmei para sempre", mesmo quando o texto mudou de verdade. Veja [Exigir ciência de um documento](/guias/exigir-ciencia-documento/).
+
+## Marquei "Exigir ciência" num documento externo e o plugin não deixou salvar. Por quê?
+
+Porque documento externo com ciência exigida **precisa de uma versão informada** no campo **Versão Atual (Manual)**. Sem um número de versão, não há o que registrar como "a versão que a pessoa confirmou". Preencha a versão e salve de novo. Veja [Exigir ciência de um documento](/guias/exigir-ciencia-documento/#funciona-para-documento-interno-e-externo).
+
 ## O Índice de Conformidade prova que estou conforme?
 
 Não. Ele é um **indicador interno de progresso**, não um certificado. Conformidade depende de fatores que nenhuma ferramenta mede sozinha. Veja o [Aviso legal](/disclaimer/).
