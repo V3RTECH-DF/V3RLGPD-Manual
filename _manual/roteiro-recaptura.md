@@ -132,14 +132,35 @@ Vale conferir, se algum print existente mostrar a combinação gestão + bloco p
 
 ## Lote de recaptura — Shortcodes vira aba de Configurações (#102, ainda não lançada — 2026-09-07)
 
-A navegação de primeiro nível vai de **oito itens para sete**: Shortcodes deixa de ser item próprio e passa a ser **aba dentro de Configurações**, entre Acessos e Licença. Atendente e Auditor deixam de enxergar essa aba (herda a guarda `settings.view`).
+A navegação de primeiro nível vai de **oito itens para sete**: Shortcodes deixa de ser item próprio e passa a ser **aba dentro de Configurações**, entre Acessos e Licença. Quem não tem `settings.view` deixa de enxergar essa aba (ela herda a guarda de Configurações). ⚠️ Nos papéis atuais isso é **só o Atendente** — o Auditor tem leitura de todos os módulos, `settings` incluído, então continua enxergando (o corpo da #102 dizia "Atendente e Auditor" e estava errado).
 
 **Afetados:**
 - `v3rlgpd-68-admin-menu-completo` — mostra a barra de navegação com os itens de primeiro nível; hoje mostra oito, precisa mostrar sete.
 - Todo o bloco `08-settings-*` (`08-settings-dpo` a `08i-settings-import`) — a barra de abas dentro de Configurações ganha uma aba nova (`shortcodes`) entre Acessos e Licença; qualquer print que mostre essa barra de abas por inteiro fica incompleto sem ela.
-- `v3rlgpd-62-auditor-menu` e `v3rlgpd-65-atendente-menu` — se mostrarem a barra de primeiro nível, também caem para sete itens (mas continuam sem chegar em Configurações, então não mudam em relação a Shortcodes especificamente).
+- `v3rlgpd-62-auditor-menu` e `v3rlgpd-65-atendente-menu` — mostram a barra de primeiro nível, que cai para sete itens. ⚠️ Atenção ao que cada um prova: o **Auditor alcança Configurações** (e portanto a aba Shortcodes); o **Atendente não**. Se o par for usado para ilustrar diferença de acesso, é essa a diferença — não "nenhum dos dois chega lá".
 - Página de Gestão no site (`80-gestao-*` a `84-gestao-*`) — **não afetada**: Shortcodes já não aparecia ali (mesma lista de exclusão de sempre, junto com Configurações).
 
 **Novo print a considerar (nunca existiu um específico da tela de Shortcodes isolada no roteiro atual):** a aba Shortcodes dentro de Configurações, mostrando o catálogo — útil para ilustrar onde ela passou a morar.
 
 Não capturado nesta rodada — entra no lote acumulado de recaptura (junto com a navegação em barra única e a gestão no site ancorada, acima), a ser tratado por agente próprio.
+
+## Executado — 2026-09-07, recaptura do painel (32 prints)
+
+Ambiente: `dev-wp` (`localhost:3080`), v1.74.1 + as entregas #93/#99 e #102 ainda não publicadas. Desktop 1920×1080, página inteira.
+
+**Capturados (26, sessão de administrador):** `01-dashboard`, `02-policies`, `04-dsar`, `05-incidents`, `06-ropa`, `08-settings-dpo`, `08b-settings-cookies`, `08c-settings-webhooks`, `08d-settings-paginas`, `08e-settings-saida`, `08f-settings-aparencia`, `10-compliance-report`, `11-templates`, `30-retencao-fila`, `31-retencao-config`, `33-mapeamento-formularios`, `41-onboarding-roteiro`, `50-mapa-conformidade`, `60-equipe-acessos`, `68-admin-menu-completo`, `90-detector`, `92-config-licenca`, `95-document-types`, `dpo-01-lista`, `dpo-03-relatorio` e **`105-shortcodes-aba`** (novo — a aba Shortcodes dentro de Configurações, entre Equipe/Acessos e Licença).
+
+**Capturados antes, na mesma rodada (6, papéis):** `62-auditor-menu`, `63-auditor-ropa`, `64-auditor-settings`, `65-atendente-menu`, `66-atendente-dsar`, `67-atendente-incidentes` — com usuários descartáveis, já removidos.
+
+⚠️ **Numeração:** o print da aba Shortcodes ficou como `105`, e não como `97/98/99` que este roteiro pedia para as telas de ciência — aqueles números **já pertencem** a prints existentes e não relacionados (`97-dashboard-opens`, `98-ropa-multi-base`, `99-licenca-sem-ativar`). Quem for capturar a ciência de documentos deve usar números livres a partir de `106`, e não os do texto acima.
+
+### Armadilhas desta rodada — ler antes de recapturar o resto
+
+1. **Endereço com aba (`?tab=`) exige recarga.** Entre dois endereços que só diferem no fragmento, o navegador não recarrega, e a tela de Configurações lê a aba pedida apenas ao montar. Sem recarga forçada, **as nove telas de Configurações saem todas mostrando a mesma aba** — aconteceu, e só apareceu ao abrir as imagens. A conferência que pega isso é exigir que a aba pedida esteja ativa antes de disparar.
+2. **Dado pessoal real aparece na tela de Equipe/Acessos** (nome e e-mail de quem administra). Anonimizar no DOM antes do disparo, nunca editar a imagem depois.
+3. **Aviso de plugin de terceiro no topo.** O WordPress **realoca** avisos para dentro da área do plugin, então ele fica na nossa própria árvore. **Não tente removê-lo por parentesco de DOM** — três tentativas levaram junto, em graus diferentes, o conteúdo da tela, e uma delas produziu 26 prints em branco. O caminho seguro é fechar pelo botão do próprio aviso e, no que sobrar, apenas esconder.
+4. **Verifique o conteúdo, não a altura da raiz.** Numa das tentativas o conteúdo inteiro foi removido, a raiz sobreviveu com altura de sobra, a checagem passou e o print saiu em branco.
+
+### Ainda pendente
+
+O restante do lote da navegação em barra única (editores e assistentes, telas com estado especial), as telas novas de **ciência de documentos**, e o lote de páginas públicas. O texto do manual ainda não foi revisado para a navegação nova — instruções do tipo "clique em Shortcodes no menu" continuam desatualizadas.
