@@ -144,6 +144,24 @@ A navegação de primeiro nível vai de **oito itens para sete**: Shortcodes dei
 
 Não capturado nesta rodada — entra no lote acumulado de recaptura (junto com a navegação em barra única e a gestão no site ancorada, acima), a ser tratado por agente próprio.
 
+## Lote de recaptura — retenção do ROPA confrontada com o expurgo real (#79, ainda não lançada — 2026-09-07)
+
+A tela da atividade do inventário (ROPA) ganha o confronto entre o prazo de retenção declarado e o expurgo automático real, com três estados possíveis: dá para ligar e está desligado; está ligado e não alcança nada; não há como automatizar, e a organização registra como o expurgo é feito fora do sistema.
+
+**Afetados:**
+- Editor de atividade do ROPA, seção de retenção — ganha o confronto e, quando aplicável, o campo de registro do expurgo externo. Nenhum print existente do editor do ROPA cobre essa seção com o comportamento novo.
+
+Não capturado nesta rodada — entra no lote acumulado de recaptura, a ser tratado por agente próprio.
+
+## Lote de recaptura — aviso de documentos legados ganha ação em lote "não exige ciência" (#109, ainda não lançada — 2026-09-07)
+
+O aviso de documentos legados (tela de Políticas) muda de texto e ganha uma ação em lote nova: decidir que os documentos selecionados **não** exigem ciência, sem ligar nada. Documentos onde essa decisão já foi tomada somem do aviso.
+
+**Afetados:**
+- Tela de Políticas, banner do aviso de documentos legados — texto e opções mudaram; qualquer print existente que mostre esse banner fica desatualizado.
+
+Não capturado nesta rodada — entra no lote acumulado de recaptura, a ser tratado por agente próprio.
+
 ## Executado — 2026-09-07, recaptura do painel (32 prints)
 
 Ambiente: `dev-wp` (`localhost:3080`), v1.74.1 + as entregas #93/#99 e #102 ainda não publicadas. Desktop 1920×1080, página inteira.
