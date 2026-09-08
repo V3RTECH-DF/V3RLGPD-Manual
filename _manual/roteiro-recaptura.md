@@ -211,5 +211,6 @@ O restante do lote da navegação em barra única (editores e assistentes, telas
 - **Ciência de documentos:** mensagem de erro de versão obrigatória, e o diálogo "o endereço mudou, mas a versão continua a mesma".
 - **Retenção no inventário (#79):** a seção da atividade com o confronto entre prazo declarado e expurgo real — os três estados, e o registro de expurgo externo.
 - **Detector (#108):** o estado de falha ("A análise não terminou"). Difícil de produzir sob demanda: exige uma varredura que pare de avançar.
+- **Detector (#111/#108, commit `d5cd200`):** correção de mecanismo interno (a tela deixou de congelar o agendamento do site enquanto acompanha a varredura) — sem mudança visual. Não gera novo lote de captura.
 - **Telas sem print no manual** (as sete acima), se o texto vier a precisar delas.
 - O restante do lote da navegação em barra única.
