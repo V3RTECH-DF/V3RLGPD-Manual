@@ -17,7 +17,7 @@ Esta página leva sua organização do "plugin recém-instalado" ao "pronto para
 
 ## Onde fica o V3RLGPD
 
-Depois de instalado e ativado no seu site WordPress, o plugin aparece no menu lateral do painel administrativo como **um único item: V3RLGPD**. Ao abrir, você vê o **Painel de Conformidade e Privacidade**, e toda a navegação passa a acontecer **dentro dessa tela**, numa **barra horizontal no alto** — os mesmos **7 itens** de sempre, na mesma ordem: **Painel**, **Auditoria de Conformidade**, **Inventário (ROPA)**, **Relatório de Impacto (RIPD)**, **Políticas**, **Atendimento ao Titular** e **Configurações**.
+Depois de instalado e ativado no seu site WordPress, o plugin aparece no menu lateral do painel administrativo como **um único item: V3RLGPD**. Se o seu site tem outros produtos da nossa casa instalados, essa entrada aparece **agrupada com a deles** no menu, em vez de espalhada entre os demais plugins. Ao abrir, você vê o **Painel de Conformidade e Privacidade**, e toda a navegação passa a acontecer **dentro dessa tela**, numa **barra horizontal no alto** — os mesmos **7 itens** de sempre, na mesma ordem: **Painel**, **Auditoria de Conformidade**, **Inventário (ROPA)**, **Relatório de Impacto (RIPD)**, **Políticas**, **Atendimento ao Titular** e **Configurações**.
 
 Quando você está num item que tem subdivisões — **Auditoria de Conformidade** (*Detector* e *Mapa de Conformidade*), **Inventário (ROPA)** (*Inventário* e *Verificador de Formulários*) ou **Atendimento ao Titular** (*Consentimentos, Atendimentos, Denúncias, Incidentes, Retenção* e *Ações do Encarregado*) — aparece uma **segunda barra** logo abaixo, com as abas daquele item. É o mesmo conteúdo de sempre: muda onde se clica, não o que existe.
 

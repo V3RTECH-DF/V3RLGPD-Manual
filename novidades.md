@@ -8,6 +8,14 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versão 1.78 — Produtos da casa agrupados no menu do painel
+
+Se o seu site WordPress tem **mais de um produto da nossa casa instalado** (por exemplo, V3RLGPD e um plugin da família RIT), as entradas desses produtos no menu lateral do painel administrativo passavam **espalhadas**, misturadas com plugins de outras empresas — quem usava dois produtos nossos tinha que procurar cada um num canto diferente do menu.
+
+Agora elas ficam **juntas**, em dois blocos em sequência: primeiro os produtos da família **RIT**, depois os da **V3RTECH** — em ordem alfabética dentro de cada bloco. Cada produto mantém o próprio ícone, só a posição no menu muda.
+
+> 💡 **Se o seu site só tem o V3RLGPD instalado, nada muda para você.** O agrupamento só aparece quando há mais de um produto nosso no mesmo site — sem outro produto para agrupar, a entrada do V3RLGPD continua exatamente onde estava.
+
 ## Versão 1.74 — A ciência de documentos passa a registrar as confirmações
 
 A funcionalidade **Exigir ciência** já existia, mas as confirmações não estavam sendo registradas do outro lado — o aviso aparecia e o usuário confirmava, só que nada ficava guardado. Isso está corrigido: as confirmações passam a ser contadas normalmente. Quem já usava vai notar que a aba **Ciência de documentos**, antes sempre vazia, passa a mostrar registros.
