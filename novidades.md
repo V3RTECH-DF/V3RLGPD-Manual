@@ -8,6 +8,14 @@ permalink: /novidades/
 
 O que mudou no V3RLGPD, em linguagem leve. Para o histórico técnico completo, fale com a equipe de implantação.
 
+## Versão 1.79 — O link do aviso de cookies passa a mostrar o nome certo
+
+No aviso de cookies que aparece para os visitantes do site, o link no fim da frase levava sempre para a Central de Privacidade — mas o texto do link era fixo, então a pessoa podia ler um nome e chegar numa página com outro. Agora o link mostra **o nome que a sua organização deu à página** escolhida como Central de Privacidade em Configurações → Páginas & Integração.
+
+> 💡 **Sem página escolhida, nada muda.** Se você não selecionou uma página específica como Central, o link continua dizendo "Central de Privacidade".
+
+O texto do aviso passa a depender de como você nomeou a sua página — quer um nome específico ali, é o título da página que você ajusta.
+
 ## Versão 1.78 — Produtos da casa agrupados no menu do painel
 
 Se o seu site WordPress tem **mais de um produto da nossa casa instalado** (por exemplo, V3RLGPD e um plugin da família RIT), as entradas desses produtos no menu lateral do painel administrativo passavam **espalhadas**, misturadas com plugins de outras empresas — quem usava dois produtos nossos tinha que procurar cada um num canto diferente do menu.

@@ -63,7 +63,7 @@ Se você montou uma **página personalizada** com os shortcodes, diga ao plugin 
 A página escolhida passa a valer para:
 
 - o **Índice de Conformidade** (o item "Central de Privacidade" do painel marca como concluído quando a página designada está publicada);
-- o **link "Centro de Privacidade"** do banner de cookies, que passa a apontar para ela.
+- o **link do aviso de cookies**, que passa a apontar para ela **e a mostrar o título dela** — se você chamou a sua página de "Central de Privacidade e Cookies", é esse nome que aparece no aviso, não mais um rótulo fixo. Sem página selecionada, o link continua dizendo "Central de Privacidade".
 
 > 💡 **Por que isso importa**
 >
